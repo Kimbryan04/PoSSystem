@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,13 @@ namespace WindowsFormsApp2
 {
     public partial class Brand : Form
     {
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cm = new SqlCommand();
+        DBConnect dbcon = new DBConnect();
         public Brand()
         {
             InitializeComponent();
+            cn = new SqlConnection(dbcon.MyConnection());
         }
 
         private void label1_Click(object sender, EventArgs e)

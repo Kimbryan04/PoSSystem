@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAACWSURBVDhP7ZNRDoJADAU5CIre/0hghOg9xjRpDbx0a9xf
-        nc/Xx5BN02H4A0zASXMFGIGz5gesANyAFbjoPHDZDGzAVedvdkUjlUrnnnUOVNKvZUEm7ZYFIni4uE8W
-        uNQEgYn7ZEYifHYLiyen2y/JFpAtSr9LyWSN2WdpJWt0aqndMLC0ZMFOWp+e4fc8aq74zyfNf5AXNxWO
-        e8xRSpsAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAJZJREFUOE/tk1EOgkAMBTkIit7/SGCE6D3GNGkNvHRr3F+dz9fHkE3TYfgDTMBJ
+        cwUYgbPmB6wA3IAVuOg8cNkMbMBV5292RSOVSueedQ5U0q9lQSbtlgUieLi4Txa41ASBiftkRiJ8dguL
+        J6fbL8kWkC1Kv0vJZI3ZZ2kla3Rqqd0wsLRkwU5an57h9zxqrvjPJ81/kBc3FY57zFFKmwAAAABJRU5E
+        rkJggg==
 </value>
   </data>
 </root>
