@@ -37,6 +37,7 @@
             this.txtBrand = new System.Windows.Forms.TextBox();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
+            this.lblbrand = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -120,6 +121,7 @@
             this.btnupdate.TabIndex = 4;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btncancel
             // 
@@ -136,11 +138,22 @@
             this.btncancel.UseVisualStyleBackColor = false;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
+            // lblbrand
+            // 
+            this.lblbrand.AutoSize = true;
+            this.lblbrand.Location = new System.Drawing.Point(76, 169);
+            this.lblbrand.Name = "lblbrand";
+            this.lblbrand.Size = new System.Drawing.Size(15, 13);
+            this.lblbrand.TabIndex = 6;
+            this.lblbrand.Text = "id";
+            this.lblbrand.Visible = false;
+            // 
             // BrandModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(659, 204);
+            this.Controls.Add(this.lblbrand);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.txtBrand);
@@ -163,11 +176,12 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnsave;
-        private System.Windows.Forms.TextBox txtBrand;
-        private System.Windows.Forms.Button btnupdate;
-        private System.Windows.Forms.Button btncancel;
+        public System.Windows.Forms.Label lblbrand;
+        public System.Windows.Forms.TextBox txtBrand;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Button btnsave;
+        public System.Windows.Forms.Button btnupdate;
+        public System.Windows.Forms.Button btncancel;
     }
 }

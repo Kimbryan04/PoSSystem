@@ -16,10 +16,12 @@ namespace WindowsFormsApp2
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
-        public BrandModuleForm()
+        Brand brand;
+        public BrandModuleForm(Brand br)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.MyConnection());
+            brand = br;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -36,30 +38,22 @@ namespace WindowsFormsApp2
         {
             try
             {
-                // Validate that the text box is not empty
-                if (string.IsNullOrEmpty(txtBrand.Text))
-                {
-                    MessageBox.Show("Brand name cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return; // Exit if validation fails
-                }
-
                 if (MessageBox.Show("Are you sure you want to save this Brand?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-
-                    // Insert only into 'brand' column (assuming 'id' is an identity column)
-                    cm = new SqlCommand("INSERT INTO tbBrand(brand) VALUES(@brand)", cn);
+                    cm = new SqlCommand("INSERT INTO tbBrand(brand)VALUES(@brand)", cn);
                     cm.Parameters.AddWithValue("@brand", txtBrand.Text);
-
                     cm.ExecuteNonQuery();
                     cn.Close();
-
                     MessageBox.Show("Record has been successfully saved.", "POS");
+                    Clear();
+                    brand.LoadBrand();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -72,6 +66,22 @@ namespace WindowsFormsApp2
         public void Clear()
         {
             txtBrand.Clear();
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to update this brand?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                cn.Open();
+                cm = new SqlCommand("UPDATE tbBrand SET brand = @brand WHERE id LIKE '" + lblbrand.Text + "'", cn);
+                cm.Parameters.AddWithValue("@brand", txtBrand.Text);
+                cm.ExecuteNonQuery();
+                cn.Close();
+                MessageBox.Show("Brand has been updated", "POS");
+                Clear();
+                this.Dispose();
+            }
+            
         }
     }
 }
