@@ -22,7 +22,22 @@ namespace WindowsFormsApp2
             CustomizeDesign();
             cn = new SqlConnection(dbcon.MyConnection());
             cn.Open();
-            MessageBox.Show("Database is Connected");
+        }
+
+        private Form activeForm = null;
+        public void OpenChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            lbltitle.Text = childForm.Text;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         public void CustomizeDesign()
@@ -83,11 +98,13 @@ namespace WindowsFormsApp2
 
         private void btncategory_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Category());
             hidesubmenu();
         }
 
         private void btnbrand_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Brand());
             hidesubmenu();
         }
 

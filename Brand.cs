@@ -78,5 +78,10 @@ namespace WindowsFormsApp2
             }
             LoadBrand();
         }
+
+        private void Brand_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

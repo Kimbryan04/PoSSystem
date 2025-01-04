@@ -56,7 +56,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbltitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SubpanelSetting.SuspendLayout();
@@ -483,32 +483,31 @@
             // 
             // panelTitle
             // 
-            this.panelTitle.Controls.Add(this.label3);
+            this.panelTitle.Controls.Add(this.lbltitle);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(214, 0);
             this.panelTitle.Name = "panelTitle";
             this.panelTitle.Size = new System.Drawing.Size(970, 73);
             this.panelTitle.TabIndex = 1;
             // 
-            // label3
+            // lbltitle
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(418, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Title Name";
+            this.lbltitle.AutoSize = true;
+            this.lbltitle.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle.ForeColor = System.Drawing.Color.White;
+            this.lbltitle.Location = new System.Drawing.Point(418, 18);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(124, 25);
+            this.lbltitle.TabIndex = 2;
+            this.lbltitle.Text = "Title Name";
             // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.White;
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(214, 73);
-            this.panelMain.MinimumSize = new System.Drawing.Size(1200, 700);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1200, 700);
+            this.panelMain.Size = new System.Drawing.Size(970, 588);
             this.panelMain.TabIndex = 2;
             // 
             // MainForm
@@ -549,9 +548,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Panel SubPanelProduct;
-        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Button btnbrand;
         private System.Windows.Forms.Button btncategory;
         private System.Windows.Forms.Button btnproductlist;
@@ -569,6 +567,7 @@
         private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button btnposrecord;
         private System.Windows.Forms.Button btnsaleshistory;
+        private System.Windows.Forms.Panel panelMain;
     }
 }
 

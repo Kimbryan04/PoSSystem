@@ -58,6 +58,18 @@
     <Compile Include="BrandModuleForm.Designer.cs">
       <DependentUpon>BrandModuleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryModuleForm.Designer.cs">
+      <DependentUpon>CategoryModuleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnect.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -72,6 +84,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BrandModuleForm.resx">
       <DependentUpon>BrandModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryModuleForm.resx">
+      <DependentUpon>CategoryModuleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
