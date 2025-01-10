@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class Brand
+    partial class Product
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Brand));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
+            this.dvgBrand = new System.Windows.Forms.DataGridView();
             this.btnadd = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dvgBrand = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgBrand)).BeginInit();
             this.btnadd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgBrand)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dvgBrand
+            // 
+            this.dvgBrand.AllowUserToAddRows = false;
+            this.dvgBrand.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgBrand.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dvgBrand.ColumnHeadersHeight = 30;
+            this.dvgBrand.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dvgBrand.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Edit,
+            this.Delete});
+            this.dvgBrand.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dvgBrand.EnableHeadersVisualStyles = false;
+            this.dvgBrand.Location = new System.Drawing.Point(0, 0);
+            this.dvgBrand.Name = "dvgBrand";
+            this.dvgBrand.RowHeadersVisible = false;
+            this.dvgBrand.Size = new System.Drawing.Size(1000, 513);
+            this.dvgBrand.TabIndex = 3;
             // 
             // btnadd
             // 
@@ -50,17 +88,16 @@
             this.btnadd.Controls.Add(this.pictureBox1);
             this.btnadd.Controls.Add(this.label1);
             this.btnadd.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnadd.Location = new System.Drawing.Point(0, 474);
+            this.btnadd.Location = new System.Drawing.Point(0, 513);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(984, 87);
-            this.btnadd.TabIndex = 0;
-            this.btnadd.Paint += new System.Windows.Forms.PaintEventHandler(this.btnadd_Paint);
+            this.btnadd.Size = new System.Drawing.Size(1000, 87);
+            this.btnadd.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(928, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(944, 29);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 34);
             this.pictureBox1.TabIndex = 2;
@@ -73,42 +110,12 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(12, 11);
+            this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 62);
+            this.label1.Size = new System.Drawing.Size(123, 52);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Manage Brand";
+            this.label1.Text = "Manage Product";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // dvgBrand
-            // 
-            this.dvgBrand.AllowUserToAddRows = false;
-            this.dvgBrand.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvgBrand.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dvgBrand.ColumnHeadersHeight = 30;
-            this.dvgBrand.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dvgBrand.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Edit,
-            this.Delete});
-            this.dvgBrand.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dvgBrand.EnableHeadersVisualStyles = false;
-            this.dvgBrand.Location = new System.Drawing.Point(0, 0);
-            this.dvgBrand.Name = "dvgBrand";
-            this.dvgBrand.RowHeadersVisible = false;
-            this.dvgBrand.Size = new System.Drawing.Size(984, 474);
-            this.dvgBrand.TabIndex = 1;
-            this.dvgBrand.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgBrand_CellContentClick);
             // 
             // Column1
             // 
@@ -120,15 +127,50 @@
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Id";
+            this.Column2.HeaderText = "Pcode";
             this.Column2.Name = "Column2";
-            this.Column2.Width = 49;
+            this.Column2.Width = 83;
             // 
             // Column3
             // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Brand";
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column3.HeaderText = "Barcode";
             this.Column3.Name = "Column3";
+            this.Column3.Width = 98;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.HeaderText = "Description";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column5.HeaderText = "Brand";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 77;
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column6.HeaderText = "Category";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 104;
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column7.HeaderText = "Price";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 71;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column8.HeaderText = "Re-Order";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 101;
             // 
             // Edit
             // 
@@ -148,37 +190,40 @@
             this.Delete.Name = "Delete";
             this.Delete.Width = 5;
             // 
-            // Brand
+            // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.dvgBrand);
             this.Controls.Add(this.btnadd);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Brand";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "Product";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BRAND";
-            this.Load += new System.EventHandler(this.Brand_Load);
+            this.Text = "PRODUCT";
+            ((System.ComponentModel.ISupportInitialize)(this.dvgBrand)).EndInit();
             this.btnadd.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgBrand)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel btnadd;
         private System.Windows.Forms.DataGridView dvgBrand;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel btnadd;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
     }

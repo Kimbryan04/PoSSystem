@@ -83,5 +83,10 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void btnadd_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

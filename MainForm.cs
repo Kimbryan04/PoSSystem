@@ -93,6 +93,7 @@ namespace WindowsFormsApp2
 
         private void btnproductlist_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Product());
             hidesubmenu();
         }
 
