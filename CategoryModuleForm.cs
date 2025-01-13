@@ -35,7 +35,7 @@ namespace WindowsFormsApp2
                     cm.Parameters.AddWithValue("@category", txtCategory.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Record has been successfully saved.", "POS");
+                    MessageBox.Show("Record has been successfully saved.", "POINT OF SALES");
                     Clear();
                 }
                 category.LoadCategory();
@@ -72,7 +72,7 @@ namespace WindowsFormsApp2
                 cm.Parameters.AddWithValue("@category", txtCategory.Text);
                 cm.ExecuteNonQuery();
                 cn.Close();
-                MessageBox.Show("Category has been updated", "POS");
+                MessageBox.Show("Category has been updated", "POINT OF SALES");
                 Clear();
                 this.Dispose();
             }

@@ -29,7 +29,7 @@ namespace WindowsFormsApp2
             int i = 0;
             dvgCategory.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM tbCategory ORDER BY category", cn);
+            cm = new SqlCommand("SELECT * FROM tbCategory WHERE category LIKE '%" + txtsearch.Text + "%'", cn);
             dr = cm.ExecuteReader();
 
             while (dr.Read())
@@ -71,6 +71,16 @@ namespace WindowsFormsApp2
                 categoryModuleForm.btnupdate.Enabled = true;
                 categoryModuleForm.ShowDialog();
             }
+            LoadCategory();
+        }
+
+        private void txtsearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
             LoadCategory();
         }
     }

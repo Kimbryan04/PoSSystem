@@ -45,7 +45,7 @@ namespace WindowsFormsApp2
                     cm.Parameters.AddWithValue("@brand", txtBrand.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Record has been successfully saved.", "POS");
+                    MessageBox.Show("Record has been successfully saved.", "POINT OF SALES");
                     Clear();
                 }
                 brand.LoadBrand();
@@ -77,7 +77,7 @@ namespace WindowsFormsApp2
                 cm.Parameters.AddWithValue("@brand", txtBrand.Text);
                 cm.ExecuteNonQuery();
                 cn.Close();
-                MessageBox.Show("Brand has been updated", "POS");
+                MessageBox.Show("Brand has been updated", "POINT OF SALES");
                 Clear();
                 this.Dispose();
             }

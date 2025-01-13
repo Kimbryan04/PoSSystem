@@ -28,12 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
-            this.dvgBrand = new System.Windows.Forms.DataGridView();
-            this.btnadd = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dvgProduct = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,26 +41,30 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgBrand)).BeginInit();
+            this.btnadd = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtsearch = new MetroFramework.Controls.MetroTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgProduct)).BeginInit();
             this.btnadd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dvgBrand
+            // dvgProduct
             // 
-            this.dvgBrand.AllowUserToAddRows = false;
-            this.dvgBrand.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvgBrand.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dvgBrand.ColumnHeadersHeight = 30;
-            this.dvgBrand.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dvgBrand.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dvgProduct.AllowUserToAddRows = false;
+            this.dvgProduct.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dvgProduct.ColumnHeadersHeight = 30;
+            this.dvgProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dvgProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -74,48 +75,14 @@
             this.Column8,
             this.Edit,
             this.Delete});
-            this.dvgBrand.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dvgBrand.EnableHeadersVisualStyles = false;
-            this.dvgBrand.Location = new System.Drawing.Point(0, 0);
-            this.dvgBrand.Name = "dvgBrand";
-            this.dvgBrand.RowHeadersVisible = false;
-            this.dvgBrand.Size = new System.Drawing.Size(1000, 513);
-            this.dvgBrand.TabIndex = 3;
-            // 
-            // btnadd
-            // 
-            this.btnadd.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnadd.Controls.Add(this.pictureBox1);
-            this.btnadd.Controls.Add(this.label1);
-            this.btnadd.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnadd.Location = new System.Drawing.Point(0, 513);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(1000, 87);
-            this.btnadd.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(944, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 34);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(12, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 52);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Manage Product";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dvgProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dvgProduct.EnableHeadersVisualStyles = false;
+            this.dvgProduct.Location = new System.Drawing.Point(0, 0);
+            this.dvgProduct.Name = "dvgProduct";
+            this.dvgProduct.RowHeadersVisible = false;
+            this.dvgProduct.Size = new System.Drawing.Size(1000, 513);
+            this.dvgProduct.TabIndex = 3;
+            this.dvgProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgBrand_CellContentClick);
             // 
             // Column1
             // 
@@ -129,6 +96,7 @@
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "Pcode";
             this.Column2.Name = "Column2";
+            this.Column2.Visible = false;
             this.Column2.Width = 83;
             // 
             // Column3
@@ -190,20 +158,94 @@
             this.Delete.Name = "Delete";
             this.Delete.Width = 5;
             // 
+            // btnadd
+            // 
+            this.btnadd.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnadd.Controls.Add(this.txtsearch);
+            this.btnadd.Controls.Add(this.pictureBox1);
+            this.btnadd.Controls.Add(this.label1);
+            this.btnadd.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnadd.Location = new System.Drawing.Point(0, 513);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(1000, 87);
+            this.btnadd.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(944, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 34);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(12, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 52);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Manage Product";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtsearch
+            // 
+            this.txtsearch.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            // 
+            // 
+            // 
+            this.txtsearch.CustomButton.Image = null;
+            this.txtsearch.CustomButton.Location = new System.Drawing.Point(442, 2);
+            this.txtsearch.CustomButton.Name = "";
+            this.txtsearch.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtsearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtsearch.CustomButton.TabIndex = 1;
+            this.txtsearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtsearch.CustomButton.UseSelectable = true;
+            this.txtsearch.CustomButton.Visible = false;
+            this.txtsearch.DisplayIcon = true;
+            this.txtsearch.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtsearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtsearch.Icon")));
+            this.txtsearch.Lines = new string[0];
+            this.txtsearch.Location = new System.Drawing.Point(277, 29);
+            this.txtsearch.MaxLength = 32767;
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.PasswordChar = '\0';
+            this.txtsearch.PromptText = "search here";
+            this.txtsearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtsearch.SelectedText = "";
+            this.txtsearch.SelectionLength = 0;
+            this.txtsearch.SelectionStart = 0;
+            this.txtsearch.ShortcutsEnabled = true;
+            this.txtsearch.Size = new System.Drawing.Size(472, 30);
+            this.txtsearch.TabIndex = 3;
+            this.txtsearch.UseSelectable = true;
+            this.txtsearch.WaterMark = "search here";
+            this.txtsearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtsearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
+            this.txtsearch.Click += new System.EventHandler(this.txtsearch_Click);
+            // 
             // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.dvgBrand);
+            this.Controls.Add(this.dvgProduct);
             this.Controls.Add(this.btnadd);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Product";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRODUCT";
-            ((System.ComponentModel.ISupportInitialize)(this.dvgBrand)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgProduct)).EndInit();
             this.btnadd.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -212,9 +254,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dvgBrand;
+        private System.Windows.Forms.DataGridView dvgProduct;
         private System.Windows.Forms.Panel btnadd;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -226,5 +267,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private MetroFramework.Controls.MetroTextBox txtsearch;
     }
 }

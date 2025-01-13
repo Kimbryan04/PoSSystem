@@ -34,7 +34,7 @@ namespace WindowsFormsApp2
             int i = 0;
             dvgBrand.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM tbBrand ORDER BY brand", cn);
+            cm = new SqlCommand("SELECT * FROM tbBrand WHERE brand LIKE '%" + txtsearch.Text + "%'", cn);
             dr = cm.ExecuteReader();
 
             while (dr.Read()) 
@@ -64,7 +64,7 @@ namespace WindowsFormsApp2
                     cm = new SqlCommand("DELETE FROM tbBrand WHERE id LIKE '" + dvgBrand[1, e.RowIndex].Value.ToString() + "'", cn);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Brand has been successfully deleted.", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Brand has been successfully deleted.", "POINT OF SALES", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else if( colname == "Edit")
@@ -87,6 +87,26 @@ namespace WindowsFormsApp2
         private void btnadd_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void txtsearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtsearch_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
+            LoadBrand();
         }
     }
 }

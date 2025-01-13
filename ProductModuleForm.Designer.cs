@@ -46,13 +46,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbarcode = new System.Windows.Forms.TextBox();
             this.cbcat = new System.Windows.Forms.ComboBox();
             this.cbbrand = new System.Windows.Forms.ComboBox();
-            this.nudre = new System.Windows.Forms.NumericUpDown();
+            this.udre = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udre)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -111,6 +111,7 @@
             this.btncancel.TabIndex = 12;
             this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = false;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // btnupdate
             // 
@@ -125,6 +126,7 @@
             this.btnupdate.TabIndex = 11;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // txtPcode
             // 
@@ -147,6 +149,7 @@
             this.btnsave.TabIndex = 9;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // label1
             // 
@@ -234,13 +237,13 @@
             this.label6.TabIndex = 24;
             this.label6.Text = "Re-Order Level :";
             // 
-            // textBox1
+            // txtbarcode
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(501, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 26);
-            this.textBox1.TabIndex = 26;
+            this.txtbarcode.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbarcode.Location = new System.Drawing.Point(501, 92);
+            this.txtbarcode.Name = "txtbarcode";
+            this.txtbarcode.Size = new System.Drawing.Size(201, 26);
+            this.txtbarcode.TabIndex = 26;
             // 
             // cbcat
             // 
@@ -260,24 +263,25 @@
             this.cbbrand.Size = new System.Drawing.Size(501, 26);
             this.cbbrand.TabIndex = 28;
             // 
-            // nudre
+            // udre
             // 
-            this.nudre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudre.Location = new System.Drawing.Point(558, 271);
-            this.nudre.Maximum = new decimal(new int[] {
+            this.udre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udre.Location = new System.Drawing.Point(558, 271);
+            this.udre.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.nudre.Minimum = new decimal(new int[] {
+            this.udre.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.nudre.Name = "nudre";
-            this.nudre.Size = new System.Drawing.Size(144, 24);
-            this.nudre.TabIndex = 29;
-            this.nudre.Value = new decimal(new int[] {
+            this.udre.Name = "udre";
+            this.udre.Size = new System.Drawing.Size(144, 24);
+            this.udre.TabIndex = 29;
+            this.udre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.udre.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -288,10 +292,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 387);
-            this.Controls.Add(this.nudre);
+            this.Controls.Add(this.udre);
             this.Controls.Add(this.cbbrand);
             this.Controls.Add(this.cbcat);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbarcode);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtprice);
             this.Controls.Add(this.label7);
@@ -315,7 +319,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udre)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,9 +344,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox cbcat;
-        private System.Windows.Forms.ComboBox cbbrand;
-        private System.Windows.Forms.NumericUpDown nudre;
+        public System.Windows.Forms.TextBox txtbarcode;
+        public System.Windows.Forms.ComboBox cbcat;
+        public System.Windows.Forms.ComboBox cbbrand;
+        public System.Windows.Forms.NumericUpDown udre;
     }
 }
