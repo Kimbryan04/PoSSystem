@@ -131,6 +131,7 @@ namespace WindowsFormsApp2
 
         private void btnsupplier_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Supplier());
             hidesubmenu();
         }
 

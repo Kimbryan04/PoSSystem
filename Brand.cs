@@ -50,6 +50,10 @@ namespace WindowsFormsApp2
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             BrandModuleForm moduleform = new BrandModuleForm(this);
+            moduleform.btnsave.Enabled = true;
+            moduleform.btnupdate.Enabled = false;
+            moduleform.ShowDialog();
+            LoadBrand();
             moduleform.ShowDialog();
         }
 

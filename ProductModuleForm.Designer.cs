@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblproduct = new System.Windows.Forms.Label();
             this.btncancel = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.txtPcode = new System.Windows.Forms.TextBox();
@@ -87,16 +86,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // lblproduct
-            // 
-            this.lblproduct.AutoSize = true;
-            this.lblproduct.Location = new System.Drawing.Point(75, 355);
-            this.lblproduct.Name = "lblproduct";
-            this.lblproduct.Size = new System.Drawing.Size(15, 13);
-            this.lblproduct.TabIndex = 13;
-            this.lblproduct.Text = "id";
-            this.lblproduct.Visible = false;
             // 
             // btncancel
             // 
@@ -305,7 +294,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblproduct);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.txtPcode);
@@ -330,7 +318,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.Label lblproduct;
         public System.Windows.Forms.Button btncancel;
         public System.Windows.Forms.Button btnupdate;
         public System.Windows.Forms.TextBox txtPcode;

@@ -27,6 +27,12 @@ namespace WindowsFormsApp2
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             ProductModuleForm moduleform = new ProductModuleForm(this);
+            
+            moduleform.btnsave.Enabled = true;
+            moduleform.btnupdate.Enabled = false;
+            
+            LoadProduct();
+           
             moduleform.ShowDialog();
         }
         

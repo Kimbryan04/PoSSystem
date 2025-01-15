@@ -173,7 +173,7 @@
             this.txtsearch.MaxLength = 32767;
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.PasswordChar = '\0';
-            this.txtsearch.PromptText = "search here";
+            
             this.txtsearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtsearch.SelectedText = "";
             this.txtsearch.SelectionLength = 0;
