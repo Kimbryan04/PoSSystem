@@ -157,6 +157,7 @@ namespace WindowsFormsApp2
 
         private void btnuser_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new UserAccount());
             hidesubmenu();
         }
 

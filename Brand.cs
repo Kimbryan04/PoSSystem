@@ -54,7 +54,7 @@ namespace WindowsFormsApp2
             moduleform.btnupdate.Enabled = false;
             moduleform.ShowDialog();
             LoadBrand();
-            moduleform.ShowDialog();
+            
         }
 
         private void dvgBrand_CellContentClick(object sender, DataGridViewCellEventArgs e)
