@@ -121,6 +121,7 @@ namespace WindowsFormsApp2
 
         private void btnstockentry_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new StockIn());
             hidesubmenu();
         }
 

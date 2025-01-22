@@ -72,5 +72,23 @@ namespace WindowsFormsApp2
             cn.Close();
 
         }
+
+        private void txtsearch_TextChanged(object sender, EventArgs e)
+        {
+            LoadProduct();
+        }
+
+        private void txtsearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtsearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+
+            }
+        }
     }
 }

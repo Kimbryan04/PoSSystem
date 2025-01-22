@@ -465,7 +465,7 @@
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.ForeColor = System.Drawing.Color.White;
-            this.lbltitle.Location = new System.Drawing.Point(86, 18);
+            this.lbltitle.Location = new System.Drawing.Point(22, 18);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(170, 25);
             this.lbltitle.TabIndex = 2;
