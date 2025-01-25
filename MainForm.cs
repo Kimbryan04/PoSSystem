@@ -169,7 +169,16 @@ namespace WindowsFormsApp2
 
         private void btnlogout_Click(object sender, EventArgs e)
         {
+
             hidesubmenu();
+
+            if (MessageBox.Show("Exit Apllication?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.ShowDialog();
+               
+            }
         }
     }
 }

@@ -53,7 +53,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblusername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.lbltitle = new System.Windows.Forms.Label();
@@ -430,7 +430,7 @@
             // 
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblusername);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -460,16 +460,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Administrator";
             // 
-            // label1
+            // lblusername
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(55, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Username";
+            this.lblusername.AutoSize = true;
+            this.lblusername.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusername.ForeColor = System.Drawing.Color.White;
+            this.lblusername.Location = new System.Drawing.Point(55, 120);
+            this.lblusername.Name = "lblusername";
+            this.lblusername.Size = new System.Drawing.Size(83, 20);
+            this.lblusername.TabIndex = 0;
+            this.lblusername.Text = "Username";
             // 
             // pictureBox1
             // 
@@ -495,7 +495,7 @@
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.ForeColor = System.Drawing.Color.White;
-            this.lbltitle.Location = new System.Drawing.Point(418, 18);
+            this.lbltitle.Location = new System.Drawing.Point(300, 23);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(124, 25);
             this.lbltitle.TabIndex = 2;
@@ -547,8 +547,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Panel SubPanelProduct;
         private System.Windows.Forms.Button btnbrand;
         private System.Windows.Forms.Button btncategory;
@@ -568,6 +566,8 @@
         private System.Windows.Forms.Button btnposrecord;
         private System.Windows.Forms.Button btnsaleshistory;
         private System.Windows.Forms.Panel panelMain;
+        public System.Windows.Forms.Label lblusername;
+        public System.Windows.Forms.Label lbltitle;
     }
 }
 

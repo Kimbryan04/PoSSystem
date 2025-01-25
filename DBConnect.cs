@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
@@ -28,6 +29,25 @@ namespace WindowsFormsApp2
             DataTable table = new DataTable();
             adapter.Fill(table);
             return table;
+        }
+
+        public void ExecuteQuery(string sql)
+        {
+            try
+            {
+                cn.ConnectionString = MyConnection();
+                cn.Open();
+                cm = new SqlCommand(sql, cn);
+                cm.ExecuteNonQuery();
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+           
+
         }
     }
 }

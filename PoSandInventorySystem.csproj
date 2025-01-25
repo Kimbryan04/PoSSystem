@@ -88,7 +88,25 @@
     <Compile Include="CategoryModuleForm.Designer.cs">
       <DependentUpon>CategoryModuleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DailySales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailySales.Designer.cs">
+      <DependentUpon>DailySales.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnect.cs" />
+    <Compile Include="Discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discount.Designer.cs">
+      <DependentUpon>Discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="LookUpProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +144,12 @@
     </Compile>
     <Compile Include="Qty.Designer.cs">
       <DependentUpon>Qty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settle.Designer.cs">
+      <DependentUpon>Settle.cs</DependentUpon>
     </Compile>
     <Compile Include="StockIn.cs">
       <SubType>Form</SubType>
@@ -166,6 +190,15 @@
     <EmbeddedResource Include="CategoryModuleForm.resx">
       <DependentUpon>CategoryModuleForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DailySales.resx">
+      <DependentUpon>DailySales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Discount.resx">
+      <DependentUpon>Discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LookUpProduct.resx">
       <DependentUpon>LookUpProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +225,9 @@
     </Compile>
     <EmbeddedResource Include="Qty.resx">
       <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settle.resx">
+      <DependentUpon>Settle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StockIn.resx">
       <DependentUpon>StockIn.cs</DependentUpon>
