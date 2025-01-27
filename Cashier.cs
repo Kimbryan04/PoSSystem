@@ -121,7 +121,7 @@ namespace WindowsFormsApp2
             
             slide(btnsettle);
             Settle settle = new Settle(this);
-            settle.txtSale.Text = labeldisplaytotal.Text;
+            settle.txtSale.Text = lblsalestotal.Text;
             settle.ShowDialog();    
         }
 
@@ -145,6 +145,8 @@ namespace WindowsFormsApp2
         private void btnsales_Click(object sender, EventArgs e)
         {
             slide(btnsales);
+            DailySales daily = new DailySales();
+            daily.ShowDialog();
         }
 
         private void btnchangepass_Click(object sender, EventArgs e)
@@ -242,15 +244,15 @@ namespace WindowsFormsApp2
 
         public void getCartTotal()
         {
+
             double discount = double.Parse(lbldisc.Text);
-            double sales = double.Parse(lblsalestotal.Text) - discount;
+            double sales = double.Parse(lblsalestotal.Text) - discount;  // Apply the discount to sales total
             double vat = sales * 0.12;
             double vatable = sales - vat;
 
-            
             lblvat.Text = vat.ToString("#,##0.00");
             lblvatable.Text = vatable.ToString("#,##0.00");
-            labeldisplaytotal.Text = sales.ToString("#,##0.00");
+            labeldisplaytotal.Text = lblsalestotal.Text;
 
 
         }
