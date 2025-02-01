@@ -70,6 +70,12 @@
     <Compile Include="BrandModuleForm.Designer.cs">
       <DependentUpon>BrandModuleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CancelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelForm.Designer.cs">
+      <DependentUpon>CancelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cashier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="CategoryModuleForm.Designer.cs">
       <DependentUpon>CategoryModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="DailySales.cs">
       <SubType>Form</SubType>
@@ -157,6 +169,12 @@
     <Compile Include="StockIn.Designer.cs">
       <DependentUpon>StockIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,11 +193,20 @@
     <Compile Include="UserAccount.Designer.cs">
       <DependentUpon>UserAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Void.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Void.Designer.cs">
+      <DependentUpon>Void.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BrandModuleForm.resx">
       <DependentUpon>BrandModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelForm.resx">
+      <DependentUpon>CancelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.cs</DependentUpon>
@@ -189,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryModuleForm.resx">
       <DependentUpon>CategoryModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DailySales.resx">
       <DependentUpon>DailySales.cs</DependentUpon>
@@ -232,6 +262,9 @@
     <EmbeddedResource Include="StockIn.resx">
       <DependentUpon>StockIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserAccount.resx">
       <DependentUpon>UserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Void.resx">
+      <DependentUpon>Void.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -16,6 +16,7 @@ namespace WindowsFormsApp2
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
+        public string _pass;
         public MainForm()
         {
             InitializeComponent();
@@ -158,13 +159,15 @@ namespace WindowsFormsApp2
 
         private void btnuser_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new UserAccount());
+            OpenChildForm(new UserAccount(this));
             hidesubmenu();
         }
 
         private void btnstore_Click(object sender, EventArgs e)
         {
             hidesubmenu();
+            Store store = new Store();
+            store.ShowDialog();
         }
 
         private void btnlogout_Click(object sender, EventArgs e)

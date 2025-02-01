@@ -92,6 +92,7 @@ namespace WindowsFormsApp2
                         this.Hide();
                         MainForm mainForm = new MainForm();
                         mainForm.lblusername.Text = _username;
+                        mainForm._pass = _pass;
                         mainForm.lbltitle.Text = _name + "|" + _role;
                         mainForm.ShowDialog();
 

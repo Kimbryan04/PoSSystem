@@ -146,12 +146,17 @@ namespace WindowsFormsApp2
         {
             slide(btnsales);
             DailySales daily = new DailySales();
+            daily.solduser = lblusername.Text;
             daily.ShowDialog();
+
         }
 
         private void btnchangepass_Click(object sender, EventArgs e)
         {
             slide(btnchangepass);
+            ChangePassword change = new ChangePassword(this);
+            change.ShowDialog();
+
         }
 
 

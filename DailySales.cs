@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Drawing.Html;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,7 @@ namespace WindowsFormsApp2
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         SqlDataReader dr;
+        public string solduser;
         public DailySales()
         {
             InitializeComponent();
@@ -99,6 +101,28 @@ namespace WindowsFormsApp2
             if(e.KeyCode== Keys.Escape)
             {
                 this.Dispose();
+            }
+        }
+
+        private void dvgSold_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string colname = dvgSold.Columns[e.ColumnIndex].Name;
+
+            if(colname == "Cancel")
+            {
+                CancelForm cancel = new CancelForm(this);
+                cancel.txtid.Text = dvgSold.Rows[e.RowIndex].Cells[1].Value.ToString();
+                cancel.txttransno.Text = dvgSold.Rows[e.RowIndex].Cells[2].Value.ToString();
+                cancel.txtpcode.Text = dvgSold.Rows[e.RowIndex].Cells[3].Value.ToString();
+                cancel.txtdesc.Text = dvgSold.Rows[e.RowIndex].Cells[4].Value.ToString();
+                cancel.txtprice.Text = dvgSold.Rows[e.RowIndex].Cells[5].Value.ToString();
+                cancel.txtqty.Text = dvgSold.Rows[e.RowIndex].Cells[6].Value.ToString();
+                cancel.txtdisc.Text = dvgSold.Rows[e.RowIndex].Cells[7].Value.ToString();
+                cancel.txttotal.Text = dvgSold.Rows[e.RowIndex].Cells[8].Value.ToString();
+                cancel.txtcancel.Text = solduser;
+                cancel.ShowDialog();
+
+
             }
         }
     }

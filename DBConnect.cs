@@ -13,7 +13,7 @@ namespace WindowsFormsApp2
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
-
+        SqlDataReader dr;
         private string con;
         public string MyConnection()
         {
@@ -48,6 +48,26 @@ namespace WindowsFormsApp2
             }
            
 
+        }
+
+        public String getPassword(string username)
+        {
+            string password = "";
+            cn.ConnectionString = MyConnection();
+            cn.Open();
+            cm = new SqlCommand("SELECT password FROM tbUser Where username = '" + username + "'", cn);
+            dr = cm.ExecuteReader();
+            dr.Read();
+
+            if(dr.HasRows)
+            {
+                password = dr["password"].ToString();
+            }
+            dr.Close();
+            cn.Close();
+
+
+            return password;
         }
     }
 }
