@@ -147,6 +147,10 @@ namespace WindowsFormsApp2
             slide(btnsales);
             DailySales daily = new DailySales();
             daily.solduser = lblusername.Text;
+            daily.dtpTo.Enabled = false;
+            daily.dtpFrom.Enabled = false;
+            daily.cbCashier.Enabled = false;
+            daily.cbCashier.Text = lblusername.Text;
             daily.ShowDialog();
 
         }

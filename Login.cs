@@ -56,7 +56,7 @@ namespace WindowsFormsApp2
                     _name = dr["name"].ToString();
                     _role = dr["role"].ToString() ;
                     _pass = dr["password"].ToString();
-                    _isactive = bool.Parse(dr["isactive"].ToString());
+                    _isactive = bool.Parse(dr["isactivate"].ToString());
 
                 }
                 else
@@ -70,7 +70,7 @@ namespace WindowsFormsApp2
                 {
                     if (!_isactive)
                     {
-                        MessageBox.Show("Account is inactive, Unable to Login", "Inactive Account", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Account is deactivate, Unable to Login", "Inactive Account", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                     if(_role == "Cashier")

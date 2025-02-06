@@ -125,5 +125,25 @@ namespace WindowsFormsApp2
 
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            POSReport report = new POSReport();
+            string param = "Date from: " + dtpFrom.Value.ToShortDateString() + " To: " + dtpTo.Value.ToShortDateString();
+
+            if (cbCashier.Text == "All Cashier")
+            {
+
+                report.LoadReport("Select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc as discount, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where c.status like 'Sold' and c.sdate between  '" + dtpFrom.Value + "' and '" + dtpTo.Value + " '", param, cbCashier.Text);
+
+            }
+            else
+            {
+                report.LoadReport("Select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc as discount, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where c.status like 'Sold' and c.sdate between  '" + dtpFrom.Value + "' and '" + dtpTo.Value + "' and c.cashier = '" + cbCashier.Text + " '", param, cbCashier.Text);
+
+            }
+            
+            report.ShowDialog();
+        }
     }
 }

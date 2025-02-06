@@ -125,13 +125,14 @@
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(1000, 519);
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.UseSelectable = true;
             // 
             // metroTabPage1
             // 
+            this.metroTabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.metroTabPage1.Controls.Add(this.btncancel);
             this.metroTabPage1.Controls.Add(this.btnsave);
             this.metroTabPage1.Controls.Add(this.cbrole);
@@ -146,7 +147,7 @@
             this.metroTabPage1.Controls.Add(this.label2);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 3;
+            this.metroTabPage1.HorizontalScrollbarSize = 2;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(992, 477);
@@ -154,7 +155,7 @@
             this.metroTabPage1.Text = "Create Account";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 3;
+            this.metroTabPage1.VerticalScrollbarSize = 2;
             // 
             // btncancel
             // 
@@ -199,6 +200,7 @@
             // 
             // txtfullname
             // 
+            this.txtfullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfullname.Location = new System.Drawing.Point(274, 260);
             this.txtfullname.Name = "txtfullname";
             this.txtfullname.Size = new System.Drawing.Size(525, 26);
@@ -226,6 +228,7 @@
             // 
             // txtrepass
             // 
+            this.txtrepass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtrepass.Location = new System.Drawing.Point(274, 160);
             this.txtrepass.Name = "txtrepass";
             this.txtrepass.Size = new System.Drawing.Size(525, 26);
@@ -243,6 +246,7 @@
             // 
             // txtpass
             // 
+            this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpass.Location = new System.Drawing.Point(274, 109);
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(525, 26);
@@ -260,6 +264,7 @@
             // 
             // txtusername
             // 
+            this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtusername.Location = new System.Drawing.Point(274, 58);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(525, 26);
@@ -289,15 +294,15 @@
             this.metroTabPage2.Controls.Add(this.label8);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 3;
+            this.metroTabPage2.HorizontalScrollbarSize = 2;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(992, 477);
             this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "Change Account";
+            this.metroTabPage2.Text = "Change Password";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 3;
+            this.metroTabPage2.VerticalScrollbarSize = 2;
             // 
             // lblusername
             // 
@@ -353,6 +358,7 @@
             // 
             // txtchrepass
             // 
+            this.txtchrepass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtchrepass.Location = new System.Drawing.Point(257, 240);
             this.txtchrepass.Name = "txtchrepass";
             this.txtchrepass.Size = new System.Drawing.Size(525, 26);
@@ -371,6 +377,7 @@
             // 
             // txtchnewpass
             // 
+            this.txtchnewpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtchnewpass.Location = new System.Drawing.Point(257, 196);
             this.txtchnewpass.Name = "txtchnewpass";
             this.txtchnewpass.Size = new System.Drawing.Size(525, 26);
@@ -389,6 +396,7 @@
             // 
             // txtchcurpass
             // 
+            this.txtchcurpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtchcurpass.Location = new System.Drawing.Point(257, 145);
             this.txtchcurpass.Name = "txtchcurpass";
             this.txtchcurpass.Size = new System.Drawing.Size(525, 26);
@@ -413,7 +421,7 @@
             this.metroTabPage3.Controls.Add(this.dvgUser);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 3;
+            this.metroTabPage3.HorizontalScrollbarSize = 2;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
             this.metroTabPage3.Size = new System.Drawing.Size(992, 477);
@@ -421,7 +429,7 @@
             this.metroTabPage3.Text = "Active/Inactive Account";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 3;
+            this.metroTabPage3.VerticalScrollbarSize = 2;
             // 
             // gBUser
             // 
@@ -450,6 +458,7 @@
             this.btnReset.TabIndex = 18;
             this.btnReset.Text = "Reset Password";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // lblaccnote
             // 
@@ -483,6 +492,7 @@
             this.btnProperties.TabIndex = 16;
             this.btnProperties.Text = "Properties";
             this.btnProperties.UseVisualStyleBackColor = false;
+            this.btnProperties.Click += new System.EventHandler(this.btnProperties_Click);
             // 
             // btnRemove
             // 
@@ -552,9 +562,9 @@
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "Account Status";
+            this.Column5.HeaderText = "Account Activate";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 144;
+            this.Column5.Width = 166;
             // 
             // Column4
             // 

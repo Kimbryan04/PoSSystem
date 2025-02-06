@@ -112,6 +112,10 @@ namespace WindowsFormsApp2
                         cn.Close();
                     }
 
+                    Receipt receipt = new Receipt(cashier);
+                    receipt.LoadReceipt(txtCash.Text, txtChange.Text);
+                    receipt.ShowDialog();
+
                     MessageBox.Show("Payment successfully saved!", "Payment", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cashier.GetTranNo();
                     cashier.LoadCashier();

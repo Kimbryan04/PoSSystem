@@ -19,7 +19,7 @@ namespace WindowsFormsApp2
         DBConnect dbcon = new DBConnect();
         SqlDataReader dr;
         MainForm mainForm;
-        string username;
+        public string username;
         string name;
         string role;
         string account;
@@ -84,6 +84,7 @@ namespace WindowsFormsApp2
                     MessageBox.Show("Record has been successfully saved.", "POINT OF SALES");
                     Clear();
 
+                    LoadUser();
                     
                 }
             }
@@ -175,6 +176,23 @@ namespace WindowsFormsApp2
                 MessageBox.Show("Account has been successfully deleted");
                 LoadUser();
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            Reset_Password reset = new Reset_Password(this);
+            reset.ShowDialog();
+        }
+         
+        private void btnProperties_Click(object sender, EventArgs e)
+        {
+            Property properties = new Property(this);
+            properties.Text = name + "\"" + username + " Properties"; 
+            properties.txtName.Text = name;
+            properties.cbrole.Text = role;
+            properties.cbActivate.Text = account;
+            properties.username = username;
+            properties.ShowDialog();
         }
     }
 }

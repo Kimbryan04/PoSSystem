@@ -97,7 +97,7 @@
             this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogout.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogout.ForeColor = System.Drawing.Color.White;
-            this.btnlogout.Location = new System.Drawing.Point(0, 956);
+            this.btnlogout.Location = new System.Drawing.Point(0, 934);
             this.btnlogout.Name = "btnlogout";
             this.btnlogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnlogout.Size = new System.Drawing.Size(197, 53);
@@ -112,7 +112,7 @@
             this.SubpanelSetting.Controls.Add(this.btnstore);
             this.SubpanelSetting.Controls.Add(this.btnuser);
             this.SubpanelSetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SubpanelSetting.Location = new System.Drawing.Point(0, 850);
+            this.SubpanelSetting.Location = new System.Drawing.Point(0, 828);
             this.SubpanelSetting.Name = "SubpanelSetting";
             this.SubpanelSetting.Size = new System.Drawing.Size(197, 106);
             this.SubpanelSetting.TabIndex = 29;
@@ -163,7 +163,7 @@
             this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsettings.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsettings.ForeColor = System.Drawing.Color.White;
-            this.btnsettings.Location = new System.Drawing.Point(0, 797);
+            this.btnsettings.Location = new System.Drawing.Point(0, 775);
             this.btnsettings.Name = "btnsettings";
             this.btnsettings.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnsettings.Size = new System.Drawing.Size(197, 53);
@@ -178,7 +178,7 @@
             this.SubpanelRecord.Controls.Add(this.btnposrecord);
             this.SubpanelRecord.Controls.Add(this.btnsaleshistory);
             this.SubpanelRecord.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SubpanelRecord.Location = new System.Drawing.Point(0, 691);
+            this.SubpanelRecord.Location = new System.Drawing.Point(0, 669);
             this.SubpanelRecord.Name = "SubpanelRecord";
             this.SubpanelRecord.Size = new System.Drawing.Size(197, 106);
             this.SubpanelRecord.TabIndex = 27;
@@ -229,7 +229,7 @@
             this.btnrecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrecord.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrecord.ForeColor = System.Drawing.Color.White;
-            this.btnrecord.Location = new System.Drawing.Point(0, 638);
+            this.btnrecord.Location = new System.Drawing.Point(0, 616);
             this.btnrecord.Name = "btnrecord";
             this.btnrecord.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnrecord.Size = new System.Drawing.Size(197, 53);
@@ -247,7 +247,7 @@
             this.btnsupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsupplier.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsupplier.ForeColor = System.Drawing.Color.White;
-            this.btnsupplier.Location = new System.Drawing.Point(0, 585);
+            this.btnsupplier.Location = new System.Drawing.Point(0, 563);
             this.btnsupplier.Name = "btnsupplier";
             this.btnsupplier.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnsupplier.Size = new System.Drawing.Size(197, 53);
@@ -262,7 +262,7 @@
             this.SubpanelInstock.Controls.Add(this.btnstockadj);
             this.SubpanelInstock.Controls.Add(this.btnstockentry);
             this.SubpanelInstock.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SubpanelInstock.Location = new System.Drawing.Point(0, 479);
+            this.SubpanelInstock.Location = new System.Drawing.Point(0, 457);
             this.SubpanelInstock.Name = "SubpanelInstock";
             this.SubpanelInstock.Size = new System.Drawing.Size(197, 106);
             this.SubpanelInstock.TabIndex = 23;
@@ -313,7 +313,7 @@
             this.btninstock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninstock.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninstock.ForeColor = System.Drawing.Color.White;
-            this.btninstock.Location = new System.Drawing.Point(0, 426);
+            this.btninstock.Location = new System.Drawing.Point(0, 404);
             this.btninstock.Name = "btninstock";
             this.btninstock.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btninstock.Size = new System.Drawing.Size(197, 53);
@@ -329,7 +329,7 @@
             this.SubPanelProduct.Controls.Add(this.btncategory);
             this.SubPanelProduct.Controls.Add(this.btnproductlist);
             this.SubPanelProduct.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SubPanelProduct.Location = new System.Drawing.Point(0, 292);
+            this.SubPanelProduct.Location = new System.Drawing.Point(0, 270);
             this.SubPanelProduct.Name = "SubPanelProduct";
             this.SubPanelProduct.Size = new System.Drawing.Size(197, 134);
             this.SubPanelProduct.TabIndex = 18;
@@ -399,7 +399,7 @@
             this.btnproduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnproduct.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnproduct.ForeColor = System.Drawing.Color.White;
-            this.btnproduct.Location = new System.Drawing.Point(0, 239);
+            this.btnproduct.Location = new System.Drawing.Point(0, 217);
             this.btnproduct.Name = "btnproduct";
             this.btnproduct.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnproduct.Size = new System.Drawing.Size(197, 53);
@@ -417,7 +417,7 @@
             this.btndashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndashboard.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndashboard.ForeColor = System.Drawing.Color.White;
-            this.btndashboard.Location = new System.Drawing.Point(0, 186);
+            this.btndashboard.Location = new System.Drawing.Point(0, 164);
             this.btndashboard.Name = "btndashboard";
             this.btndashboard.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btndashboard.Size = new System.Drawing.Size(197, 53);
@@ -435,7 +435,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(197, 186);
+            this.panel2.Size = new System.Drawing.Size(197, 164);
             this.panel2.TabIndex = 1;
             // 
             // label4
@@ -448,13 +448,14 @@
             this.label4.Size = new System.Drawing.Size(25, 20);
             this.label4.TabIndex = 2;
             this.label4.Text = "Ln";
+            this.label4.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(45, 151);
+            this.label2.Location = new System.Drawing.Point(39, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 20);
             this.label2.TabIndex = 1;
@@ -465,7 +466,7 @@
             this.lblusername.AutoSize = true;
             this.lblusername.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusername.ForeColor = System.Drawing.Color.White;
-            this.lblusername.Location = new System.Drawing.Point(55, 120);
+            this.lblusername.Location = new System.Drawing.Point(39, 102);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(83, 20);
             this.lblusername.TabIndex = 0;
@@ -497,9 +498,9 @@
             this.lbltitle.ForeColor = System.Drawing.Color.White;
             this.lbltitle.Location = new System.Drawing.Point(300, 23);
             this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(124, 25);
+            this.lbltitle.Size = new System.Drawing.Size(143, 25);
             this.lbltitle.TabIndex = 2;
-            this.lbltitle.Text = "Title Name";
+            this.lbltitle.Text = "Title | Name";
             // 
             // panelMain
             // 

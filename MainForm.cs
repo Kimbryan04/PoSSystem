@@ -144,7 +144,10 @@ namespace WindowsFormsApp2
 
         private void btnsaleshistory_Click(object sender, EventArgs e)
         {
+            DailySales sales = new DailySales();
+            sales.ShowDialog();
             hidesubmenu();
+
         }
 
         private void btnposrecord_Click(object sender, EventArgs e)

@@ -165,6 +165,7 @@
             this.Delete});
             this.dvgCashier.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvgCashier.EnableHeadersVisualStyles = false;
+            this.dvgCashier.GridColor = System.Drawing.Color.DarkGray;
             this.dvgCashier.Location = new System.Drawing.Point(10, 66);
             this.dvgCashier.Name = "dvgCashier";
             this.dvgCashier.RowHeadersVisible = false;
@@ -286,6 +287,7 @@
             // 
             // txtqty
             // 
+            this.txtqty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtqty.Location = new System.Drawing.Point(144, 250);
             this.txtqty.Name = "txtqty";
             this.txtqty.Size = new System.Drawing.Size(40, 26);
@@ -385,6 +387,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(20, 250);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(118, 26);
@@ -722,10 +725,6 @@
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblvatable;
-        private System.Windows.Forms.Label lblvat;
-        private System.Windows.Forms.Label lbldisc;
-        private System.Windows.Forms.Label lblsalestotal;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -749,5 +748,9 @@
         private System.Windows.Forms.DataGridViewImageColumn colAdd;
         private System.Windows.Forms.DataGridViewImageColumn colReduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
+        public System.Windows.Forms.Label lblvatable;
+        public System.Windows.Forms.Label lblvat;
+        public System.Windows.Forms.Label lbldisc;
+        public System.Windows.Forms.Label lblsalestotal;
     }
 }
