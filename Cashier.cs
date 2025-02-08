@@ -29,6 +29,7 @@ namespace WindowsFormsApp2
             cn = new SqlConnection(dbcon.MyConnection());
             LoadCashier();
             GetTranNo();
+            lbldate.Text = DateTime.Now.ToShortDateString();
         }
 
         public void LoadCashier()

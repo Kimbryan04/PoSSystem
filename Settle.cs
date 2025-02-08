@@ -101,7 +101,7 @@ namespace WindowsFormsApp2
                     for (int i = 0; i < cashier.dvgCashier.Rows.Count; i++)
                     {
                         cn.Open();
-                        cm = new SqlCommand("Update tbProduct Set qty = qty - " + int.Parse(cashier.dvgCashier.Rows[i].Cells[5].Value.ToString()) + "WHERE pcode= ' " + cashier.dvgCashier.Rows[i].Cells[2].Value.ToString() + "'", cn);
+                        cm = new SqlCommand("Update tbProduct Set qty = qty - " + int.Parse(cashier.dvgCashier.Rows[i].Cells[5].Value.ToString()) + "WHERE pcode= '" + cashier.dvgCashier.Rows[i].Cells[2].Value.ToString() + "'", cn);
                         cm.ExecuteNonQuery();
                         cn.Close();
 

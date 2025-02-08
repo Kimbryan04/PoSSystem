@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Category));
             this.dvgCategory = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,14 +49,14 @@
             // 
             this.dvgCategory.AllowUserToAddRows = false;
             this.dvgCategory.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvgCategory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgCategory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dvgCategory.ColumnHeadersHeight = 30;
             this.dvgCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dvgCategory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -133,7 +133,7 @@
             // 
             // 
             this.txtsearch.CustomButton.Image = null;
-            this.txtsearch.CustomButton.Location = new System.Drawing.Point(444, 2);
+            this.txtsearch.CustomButton.Location = new System.Drawing.Point(441, 2);
             this.txtsearch.CustomButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtsearch.CustomButton.Name = "";
             this.txtsearch.CustomButton.Size = new System.Drawing.Size(25, 25);
@@ -157,7 +157,7 @@
             this.txtsearch.SelectionLength = 0;
             this.txtsearch.SelectionStart = 0;
             this.txtsearch.ShortcutsEnabled = true;
-            this.txtsearch.Size = new System.Drawing.Size(472, 30);
+            this.txtsearch.Size = new System.Drawing.Size(469, 30);
             this.txtsearch.TabIndex = 4;
             this.txtsearch.UseSelectable = true;
             this.txtsearch.WaterMark = "search here";
@@ -172,7 +172,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(930, 27);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(29, 34);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -185,7 +185,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(12, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 71);
+            this.label1.Size = new System.Drawing.Size(161, 71);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Category";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

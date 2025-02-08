@@ -129,6 +129,8 @@ namespace WindowsFormsApp2
         private void btnstockadj_Click(object sender, EventArgs e)
         {
             hidesubmenu();
+            OpenChildForm(new Adjustment(this));
+        
         }
 
         private void btnsupplier_Click(object sender, EventArgs e)
