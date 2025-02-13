@@ -57,23 +57,28 @@ namespace WindowsFormsApp2
             dvgSold.Rows.Clear();
             cn.Open();
 
-            if(cbCashier.Text == "All Cashier")
-            {
-               
-                cm = new SqlCommand("Select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where c.status like 'Sold' and c.sdate between  '" + dtpFrom.Value + "' and '" + dtpTo.Value + " '", cn);
+            // Adjust the query to include a filter to only show items with qty > 0
+            string query = "Select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total " +
+                           "from tbCart as c " +
+                           "inner join tbProduct as p on c.pcode = p.pcode " +
+                           "where c.status like 'Sold' " +
+                           "and c.qty > 0 " + // Only include items where qty > 0
+                           "and c.sdate between '" + dtpFrom.Value + "' and '" + dtpTo.Value + "' ";
 
-            }
-            else
+            if (cbCashier.Text != "All Cashier")
             {
-                cm = new SqlCommand("Select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where c.status like 'Sold' and c.sdate between  '" + dtpFrom.Value + "' and '" + dtpTo.Value + "' and c.cashier = '" + cbCashier.Text + " '", cn);
-
+                query += "and c.cashier = '" + cbCashier.Text + "' ";
             }
+
+            cm = new SqlCommand(query, cn);
             dr = cm.ExecuteReader();
-            while(dr.Read())
+            while (dr.Read())
             {
                 i++;
                 total += double.Parse(dr["total"].ToString());
-                dvgSold.Rows.Add(i, dr["id"].ToString(), dr["transno"].ToString(), dr["pcode"].ToString(), dr["pdesc"].ToString(), dr["price"].ToString(), dr["qty"].ToString(), dr["disc"].ToString(), dr["total"].ToString());
+                dvgSold.Rows.Add(i, dr["id"].ToString(), dr["transno"].ToString(), dr["pcode"].ToString(),
+                                 dr["pdesc"].ToString(), dr["price"].ToString(), dr["qty"].ToString(),
+                                 dr["disc"].ToString(), dr["total"].ToString());
             }
             dr.Close();
             cn.Close();
@@ -145,5 +150,7 @@ namespace WindowsFormsApp2
             
             report.ShowDialog();
         }
+
+       
     }
 }

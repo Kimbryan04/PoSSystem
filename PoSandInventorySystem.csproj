@@ -213,6 +213,12 @@
     <Compile Include="Receipt.Designer.cs">
       <DependentUpon>Receipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record.Designer.cs">
+      <DependentUpon>Record.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reset Password.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,6 +335,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Receipt.resx">
       <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Record.resx">
+      <DependentUpon>Record.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptReceipt.rdlc" />
     <EmbeddedResource Include="Reset Password.resx">

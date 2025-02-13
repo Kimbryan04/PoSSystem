@@ -79,7 +79,7 @@ namespace WindowsFormsApp2
                         cm.Parameters.AddWithValue("@pcode", dvgProduct.Rows[e.RowIndex].Cells[1].Value.ToString());
                         cm.Parameters.AddWithValue("@sdate", stockin.dtpsdate.Value);
                         cm.Parameters.AddWithValue("@stockinby", stockin.txtstockin.Text);
-                        cm.Parameters.AddWithValue("@supplierid", stockin.lblId.Text);
+                        cm.Parameters.AddWithValue("@supplierid", int.Parse(stockin.lblId.Text));
                         cm.ExecuteNonQuery();
                         cn.Close();
                         MessageBox.Show("Item successfully added", "POINT OF SALES");

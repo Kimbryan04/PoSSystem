@@ -147,7 +147,7 @@
             this.metroTabPage1.Controls.Add(this.label2);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 2;
+            this.metroTabPage1.HorizontalScrollbarSize = 1;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(992, 477);
@@ -155,7 +155,7 @@
             this.metroTabPage1.Text = "Create Account";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 2;
+            this.metroTabPage1.VerticalScrollbarSize = 1;
             // 
             // btncancel
             // 
@@ -294,7 +294,7 @@
             this.metroTabPage2.Controls.Add(this.label8);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 2;
+            this.metroTabPage2.HorizontalScrollbarSize = 1;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(992, 477);
@@ -302,7 +302,7 @@
             this.metroTabPage2.Text = "Change Password";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 2;
+            this.metroTabPage2.VerticalScrollbarSize = 1;
             // 
             // lblusername
             // 
@@ -421,7 +421,7 @@
             this.metroTabPage3.Controls.Add(this.dvgUser);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 2;
+            this.metroTabPage3.HorizontalScrollbarSize = 1;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
             this.metroTabPage3.Size = new System.Drawing.Size(992, 477);
@@ -429,7 +429,7 @@
             this.metroTabPage3.Text = "Active/Inactive Account";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 2;
+            this.metroTabPage3.VerticalScrollbarSize = 1;
             // 
             // gBUser
             // 
@@ -513,6 +513,7 @@
             // 
             this.dvgUser.AllowUserToAddRows = false;
             this.dvgUser.BackgroundColor = System.Drawing.Color.White;
+            this.dvgUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -544,14 +545,14 @@
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "No.";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 59;
+            this.Column1.Width = 57;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "User Name";
             this.Column2.Name = "Column2";
-            this.Column2.Width = 114;
+            this.Column2.Width = 112;
             // 
             // Column3
             // 
@@ -564,14 +565,14 @@
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column5.HeaderText = "Account Activate";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 166;
+            this.Column5.Width = 164;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column4.HeaderText = "Role";
             this.Column4.Name = "Column4";
-            this.Column4.Width = 66;
+            this.Column4.Width = 64;
             // 
             // UserAccount
             // 

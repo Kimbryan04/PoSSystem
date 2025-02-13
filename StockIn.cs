@@ -79,7 +79,7 @@ namespace WindowsFormsApp2
             {
                 
                 i++;
-                dvgStockIn.Rows.Add(i, dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[0].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr[7].ToString());
+                dvgStockIn.Rows.Add(i, dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[0].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr["supplier"].ToString());
 
             }
 
@@ -157,6 +157,36 @@ namespace WindowsFormsApp2
 
                 Loadstockin();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int i = 0;
+                dgvInstockHistory.Rows.Clear();
+                cn.Open();
+
+                cm = new SqlCommand("SELECT * FROM vw_StockIn WHERE Cast(sdate as date) Between '" + dtpFrom.Value.ToShortDateString() + "' AND '" + dtpTo.Value.ToShortDateString() + "' AND status Like 'Done'", cn);
+
+                dr = cm.ExecuteReader();
+                while (dr.Read())
+                {
+
+                    i++;
+                    dgvInstockHistory.Rows.Add(i, dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[0].ToString(), dr[4].ToString(), DateTime.Parse(dr[5].ToString()).ToShortDateString(), dr[6].ToString(), dr["supplier"].ToString());
+
+                }
+
+                dr.Close();
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+
+               MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
         }
     }
 }

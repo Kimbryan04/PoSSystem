@@ -152,6 +152,8 @@ namespace WindowsFormsApp2
             daily.dtpFrom.Enabled = false;
             daily.cbCashier.Enabled = false;
             daily.cbCashier.Text = lblusername.Text;
+            daily.picCLose.Visible = true;
+            daily.lblTitle.Visible = true;
             daily.ShowDialog();
 
         }

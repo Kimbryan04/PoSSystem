@@ -31,15 +31,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductStockIn));
             this.dvgProduct = new System.Windows.Forms.DataGridView();
-            this.btnadd = new System.Windows.Forms.Panel();
-            this.txtsearch = new MetroFramework.Controls.MetroTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btncancel = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Select = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnadd = new System.Windows.Forms.Panel();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.txtsearch = new MetroFramework.Controls.MetroTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dvgProduct)).BeginInit();
             this.btnadd.SuspendLayout();
             this.SuspendLayout();
@@ -48,6 +48,7 @@
             // 
             this.dvgProduct.AllowUserToAddRows = false;
             this.dvgProduct.BackgroundColor = System.Drawing.Color.White;
+            this.dvgProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -73,6 +74,42 @@
             this.dvgProduct.TabIndex = 5;
             this.dvgProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgProduct_CellContentClick);
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column1.HeaderText = "No.";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 59;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column2.HeaderText = "Pcode";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 83;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.HeaderText = "Description";
+            this.Column4.Name = "Column4";
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column8.HeaderText = "Qty";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 60;
+            // 
+            // Select
+            // 
+            this.Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Select.HeaderText = "";
+            this.Select.Image = ((System.Drawing.Image)(resources.GetObject("Select.Image")));
+            this.Select.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Select.Name = "Select";
+            this.Select.Width = 5;
+            // 
             // btnadd
             // 
             this.btnadd.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -84,6 +121,22 @@
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(660, 81);
             this.btnadd.TabIndex = 4;
+            // 
+            // btncancel
+            // 
+            this.btncancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btncancel.FlatAppearance.BorderSize = 0;
+            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancel.ForeColor = System.Drawing.Color.White;
+            this.btncancel.Location = new System.Drawing.Point(573, 24);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(75, 35);
+            this.btncancel.TabIndex = 14;
+            this.btncancel.Text = "Close";
+            this.btncancel.UseVisualStyleBackColor = false;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // txtsearch
             // 
@@ -134,58 +187,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Product Stock In";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btncancel
-            // 
-            this.btncancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btncancel.FlatAppearance.BorderSize = 0;
-            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancel.ForeColor = System.Drawing.Color.White;
-            this.btncancel.Location = new System.Drawing.Point(573, 24);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(75, 35);
-            this.btncancel.TabIndex = 14;
-            this.btncancel.Text = "Close";
-            this.btncancel.UseVisualStyleBackColor = false;
-            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "No.";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 59;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Pcode";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 83;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Description";
-            this.Column4.Name = "Column4";
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column8.HeaderText = "Qty";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 60;
-            // 
-            // Select
-            // 
-            this.Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Select.HeaderText = "";
-            this.Select.Image = ((System.Drawing.Image)(resources.GetObject("Select.Image")));
-            this.Select.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Select.Name = "Select";
-            this.Select.Width = 5;
             // 
             // ProductStockIn
             // 

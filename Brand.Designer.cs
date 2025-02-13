@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Brand));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnadd = new System.Windows.Forms.Panel();
+            this.txtsearch = new MetroFramework.Controls.MetroTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dvgBrand = new System.Windows.Forms.DataGridView();
@@ -39,7 +40,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.txtsearch = new MetroFramework.Controls.MetroTextBox();
             this.btnadd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvgBrand)).BeginInit();
@@ -57,6 +57,44 @@
             this.btnadd.Size = new System.Drawing.Size(984, 87);
             this.btnadd.TabIndex = 0;
             this.btnadd.Paint += new System.Windows.Forms.PaintEventHandler(this.btnadd_Paint);
+            // 
+            // txtsearch
+            // 
+            this.txtsearch.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            // 
+            // 
+            // 
+            this.txtsearch.CustomButton.Image = null;
+            this.txtsearch.CustomButton.Location = new System.Drawing.Point(444, 2);
+            this.txtsearch.CustomButton.Name = "";
+            this.txtsearch.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtsearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtsearch.CustomButton.TabIndex = 1;
+            this.txtsearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtsearch.CustomButton.UseSelectable = true;
+            this.txtsearch.CustomButton.Visible = false;
+            this.txtsearch.DisplayIcon = true;
+            this.txtsearch.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtsearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtsearch.Icon")));
+            this.txtsearch.Lines = new string[0];
+            this.txtsearch.Location = new System.Drawing.Point(256, 28);
+            this.txtsearch.MaxLength = 32767;
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.PasswordChar = '\0';
+            this.txtsearch.PromptText = "search here";
+            this.txtsearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtsearch.SelectedText = "";
+            this.txtsearch.SelectionLength = 0;
+            this.txtsearch.SelectionStart = 0;
+            this.txtsearch.ShortcutsEnabled = true;
+            this.txtsearch.Size = new System.Drawing.Size(472, 30);
+            this.txtsearch.TabIndex = 4;
+            this.txtsearch.UseSelectable = true;
+            this.txtsearch.WaterMark = "search here";
+            this.txtsearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtsearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
+            this.txtsearch.Click += new System.EventHandler(this.txtsearch_Click_1);
             // 
             // pictureBox1
             // 
@@ -87,6 +125,7 @@
             // 
             this.dvgBrand.AllowUserToAddRows = false;
             this.dvgBrand.BackgroundColor = System.Drawing.Color.White;
+            this.dvgBrand.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -149,44 +188,6 @@
             this.Delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Delete.Name = "Delete";
             this.Delete.Width = 5;
-            // 
-            // txtsearch
-            // 
-            this.txtsearch.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            // 
-            // 
-            // 
-            this.txtsearch.CustomButton.Image = null;
-            this.txtsearch.CustomButton.Location = new System.Drawing.Point(444, 2);
-            this.txtsearch.CustomButton.Name = "";
-            this.txtsearch.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtsearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtsearch.CustomButton.TabIndex = 1;
-            this.txtsearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtsearch.CustomButton.UseSelectable = true;
-            this.txtsearch.CustomButton.Visible = false;
-            this.txtsearch.DisplayIcon = true;
-            this.txtsearch.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.txtsearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtsearch.Icon")));
-            this.txtsearch.Lines = new string[0];
-            this.txtsearch.Location = new System.Drawing.Point(256, 28);
-            this.txtsearch.MaxLength = 32767;
-            this.txtsearch.Name = "txtsearch";
-            this.txtsearch.PasswordChar = '\0';
-            
-            this.txtsearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtsearch.SelectedText = "";
-            this.txtsearch.SelectionLength = 0;
-            this.txtsearch.SelectionStart = 0;
-            this.txtsearch.ShortcutsEnabled = true;
-            this.txtsearch.Size = new System.Drawing.Size(472, 30);
-            this.txtsearch.TabIndex = 4;
-            this.txtsearch.UseSelectable = true;
-            this.txtsearch.WaterMark = "search here";
-            this.txtsearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtsearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
-            this.txtsearch.Click += new System.EventHandler(this.txtsearch_Click_1);
             // 
             // Brand
             // 

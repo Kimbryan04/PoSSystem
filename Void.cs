@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace WindowsFormsApp2
 {
     public partial class Void : Form
@@ -25,57 +24,11 @@ namespace WindowsFormsApp2
             txtusername.Focus();
             cancel = can;
         }
-
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
-
-        private void btnVoid_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (txtusername.Text == cancel.txtcancel.Text)
-                {
-                    MessageBox.Show("Void by and Cancel by are the same, Please Enter Another person", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-
-                }
-                string user;
-                cn.Open();
-                cm = new SqlCommand("Select * from tbUser where username = @username And password = @password", cn);
-                cm.Parameters.AddWithValue("@username", txtusername.Text);
-                cm.Parameters.AddWithValue("@password", txtpass.Text);
-                dr = cm.ExecuteReader();
-                dr.Read();
-
-                if (dr.HasRows)
-                {
-                    user = dr["username"].ToString();
-                    dr.Close();
-                    cn.Close();
-                    SaveCancelOrder(user);
-                    if (cancel.cboaddinv.Text == "Yes")
-                    {
-                        dbcon.ExecuteQuery("Update tbProduct set qty = qty -" + cancel.cancelqty.Value + "where pcode= '" + cancel.txtpcode.Text + " '");
-                    }
-                    dbcon.ExecuteQuery("Update tbCart set qty = qty -" + cancel.cancelqty.Value + "where id='" + cancel.txtid.Text + " '");
-
-                    MessageBox.Show("Order transaction successfully cancelled!", "Cancel Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Dispose();
-                    cancel.ReloadList();
-                    cancel.Dispose();
-
-                }
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message, "Warning");
-            }
-        }
-
+        
         private void SaveCancelOrder(string user)
         {
             try
@@ -94,14 +47,58 @@ namespace WindowsFormsApp2
                 cm.Parameters.AddWithValue("@action", cancel.cboaddinv.Text);
                 cm.ExecuteNonQuery();
                 cn.Close();
-
-
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message, "Error");
             }
+        }
+
+        private void btnVoid_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtusername.Text.ToLower() == cancel.txtcancel.Text.ToLower())
+                {
+                    MessageBox.Show("Void by and Cancel by are the same, Please Enter Another person", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (txtpass.Text != String.Empty)
+                {
+                    string user;
+                    cn.Open();
+                    cm = new SqlCommand("Select * from tbUser where username = @username And password = @password", cn);
+                    cm.Parameters.AddWithValue("@username", txtusername.Text);
+                    cm.Parameters.AddWithValue("@password", txtpass.Text);
+                    dr = cm.ExecuteReader();
+                    dr.Read();
+                    if (dr.HasRows)
+                    {
+                        user = dr["username"].ToString();
+                        dr.Close();
+                        cn.Close();
+                        SaveCancelOrder(user);
+                        if (cancel.cboaddinv.Text == "Yes")
+                        {
+                            dbcon.ExecuteQuery("Update tbProduct set qty = qty +" + cancel.cancelqty.Value + "where pcode= '" + cancel.txtpcode.Text + " '");
+                        }
+                        dbcon.ExecuteQuery("Update tbCart set qty = qty -" + cancel.cancelqty.Value + "where id='" + cancel.txtid.Text + " '");
+                        MessageBox.Show("Order transaction successfully cancelled!", "Cancel Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Dispose();
+                        cancel.ReloadList();
+                        cancel.Dispose();
+                    }
+                    dr.Close();
+                    cn.Close();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Warning");
+            }
+           
+
         }
     }
 }

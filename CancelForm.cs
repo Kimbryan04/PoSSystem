@@ -9,7 +9,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace WindowsFormsApp2
 {
     public partial class CancelForm : Form
@@ -25,39 +24,33 @@ namespace WindowsFormsApp2
             cn = new SqlConnection(dbcon.MyConnection());
             daily = ds;
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
-
         private void btnCancelOrder_Click(object sender, EventArgs e)
         {
             try
             {
-                if(cboaddinv.Text != string.Empty && cancelqty.Value > 0 && txtreason.Text != string.Empty)
+                if (cboaddinv.Text != String.Empty && cancelqty.Value > 0 && txtreason.Text != String.Empty)
                 {
-                    if(int.Parse(txtqty.Text) >= cancelqty.Value)
+                    if (int.Parse(txtqty.Text) >= cancelqty.Value)
                     {
                         Void @void = new Void(this);
                         @void.txtusername.Focus();
                         @void.ShowDialog();
                     }
                 }
-            }   
+            }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         public void ReloadList()
         {
             daily.LoadSold();
-
         }
-
         private void cboaddinv_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;

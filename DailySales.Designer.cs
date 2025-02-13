@@ -32,9 +32,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picCLose = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtpFrom = new System.Windows.Forms.DateTimePicker();
+            this.dtpTo = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.cbCashier = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dvgSold = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,56 +54,137 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cancel = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtpFrom = new System.Windows.Forms.DateTimePicker();
-            this.dtpTo = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.cbCashier = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCLose)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgSold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgSold)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // picCLose
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(878, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picCLose.Image = ((System.Drawing.Image)(resources.GetObject("picCLose.Image")));
+            this.picCLose.Location = new System.Drawing.Point(878, 3);
+            this.picCLose.Name = "picCLose";
+            this.picCLose.Size = new System.Drawing.Size(46, 25);
+            this.picCLose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCLose.TabIndex = 0;
+            this.picCLose.TabStop = false;
+            this.picCLose.Visible = false;
+            this.picCLose.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Controls.Add(this.picCLose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(927, 48);
             this.panel1.TabIndex = 8;
             // 
-            // label2
+            // lblTitle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 19);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Sold Items";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(12, 13);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(86, 19);
+            this.lblTitle.TabIndex = 4;
+            this.lblTitle.Text = "Sold Items";
+            this.lblTitle.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 489);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Filter By Date : From";
+            // 
+            // dtpFrom
+            // 
+            this.dtpFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFrom.Location = new System.Drawing.Point(170, 486);
+            this.dtpFrom.Name = "dtpFrom";
+            this.dtpFrom.Size = new System.Drawing.Size(116, 26);
+            this.dtpFrom.TabIndex = 11;
+            this.dtpFrom.ValueChanged += new System.EventHandler(this.dtpFrom_ValueChanged);
+            // 
+            // dtpTo
+            // 
+            this.dtpTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpTo.Location = new System.Drawing.Point(324, 486);
+            this.dtpTo.Name = "dtpTo";
+            this.dtpTo.Size = new System.Drawing.Size(116, 26);
+            this.dtpTo.TabIndex = 12;
+            this.dtpTo.ValueChanged += new System.EventHandler(this.dtpTo_ValueChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(293, 489);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(24, 20);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "To";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblTotal.Location = new System.Drawing.Point(819, 491);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(36, 18);
+            this.lblTotal.TabIndex = 14;
+            this.lblTotal.Text = "0.00";
+            // 
+            // cbCashier
+            // 
+            this.cbCashier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cbCashier.FormattingEnabled = true;
+            this.cbCashier.Location = new System.Drawing.Point(460, 486);
+            this.cbCashier.Name = "cbCashier";
+            this.cbCashier.Size = new System.Drawing.Size(153, 28);
+            this.cbCashier.TabIndex = 15;
+            this.cbCashier.Text = "Select Cashier";
+            this.cbCashier.SelectedIndexChanged += new System.EventHandler(this.cbCashier_SelectedIndexChanged);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(630, 486);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(62, 34);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 471);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(927, 58);
+            this.panel2.TabIndex = 17;
             // 
             // dvgSold
             // 
             this.dvgSold.AllowUserToAddRows = false;
             this.dvgSold.BackgroundColor = System.Drawing.Color.White;
+            this.dvgSold.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,13 +206,13 @@
             this.Column7,
             this.Column8,
             this.Cancel});
-            this.dvgSold.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dvgSold.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvgSold.EnableHeadersVisualStyles = false;
             this.dvgSold.Location = new System.Drawing.Point(0, 48);
             this.dvgSold.Name = "dvgSold";
             this.dvgSold.RowHeadersVisible = false;
-            this.dvgSold.Size = new System.Drawing.Size(927, 417);
-            this.dvgSold.TabIndex = 9;
+            this.dvgSold.Size = new System.Drawing.Size(927, 423);
+            this.dvgSold.TabIndex = 18;
             this.dvgSold.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgSold_CellContentClick);
             // 
             // Column1
@@ -202,79 +291,12 @@
             this.Cancel.Name = "Cancel";
             this.Cancel.Width = 5;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 487);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Filter By Date : From";
-            // 
-            // dtpFrom
-            // 
-            this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFrom.Location = new System.Drawing.Point(167, 484);
-            this.dtpFrom.Name = "dtpFrom";
-            this.dtpFrom.Size = new System.Drawing.Size(116, 26);
-            this.dtpFrom.TabIndex = 11;
-            this.dtpFrom.ValueChanged += new System.EventHandler(this.dtpFrom_ValueChanged);
-            // 
-            // dtpTo
-            // 
-            this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTo.Location = new System.Drawing.Point(321, 484);
-            this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(116, 26);
-            this.dtpTo.TabIndex = 12;
-            this.dtpTo.ValueChanged += new System.EventHandler(this.dtpTo_ValueChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(290, 487);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 20);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "To";
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblTotal.Location = new System.Drawing.Point(816, 489);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(36, 18);
-            this.lblTotal.TabIndex = 14;
-            this.lblTotal.Text = "0.00";
-            // 
-            // cbCashier
-            // 
-            this.cbCashier.FormattingEnabled = true;
-            this.cbCashier.Location = new System.Drawing.Point(457, 484);
-            this.cbCashier.Name = "cbCashier";
-            this.cbCashier.Size = new System.Drawing.Size(153, 28);
-            this.cbCashier.TabIndex = 15;
-            this.cbCashier.Text = "Select Cashier";
-            this.cbCashier.SelectedIndexChanged += new System.EventHandler(this.cbCashier_SelectedIndexChanged);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(627, 484);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(62, 34);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // DailySales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 529);
+            this.Controls.Add(this.dvgSold);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.cbCashier);
             this.Controls.Add(this.lblTotal);
@@ -282,20 +304,20 @@
             this.Controls.Add(this.dtpTo);
             this.Controls.Add(this.dtpFrom);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dvgSold);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DailySales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DailySales";
+            this.Text = "SALES HISTORY";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DailySales_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCLose)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgSold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgSold)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,13 +325,18 @@
 
         #endregion
 
-        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox picCLose;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.DataGridView dvgSold;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.DateTimePicker dtpFrom;
+        public System.Windows.Forms.DateTimePicker dtpTo;
+        public System.Windows.Forms.ComboBox cbCashier;
+        public System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.DataGridView dvgSold;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -320,9 +347,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewImageColumn Cancel;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.DateTimePicker dtpFrom;
-        public System.Windows.Forms.DateTimePicker dtpTo;
-        public System.Windows.Forms.ComboBox cbCashier;
     }
 }
