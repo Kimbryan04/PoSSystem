@@ -194,5 +194,10 @@ namespace WindowsFormsApp2
             properties.username = username;
             properties.ShowDialog();
         }
+
+        private void metroTabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

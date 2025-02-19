@@ -188,5 +188,11 @@ namespace WindowsFormsApp2
                
             }
         }
+
+        private void btndashboard_Click(object sender, EventArgs e)
+        {
+            hidesubmenu();
+            OpenChildForm(new Dashboard());
+        }
     }
 }

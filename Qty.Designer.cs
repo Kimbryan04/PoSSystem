@@ -52,10 +52,12 @@
             this.ClientSize = new System.Drawing.Size(169, 41);
             this.Controls.Add(this.txtQty);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Qty";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Qty";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Qty_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

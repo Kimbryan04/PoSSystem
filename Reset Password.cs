@@ -48,5 +48,13 @@ namespace WindowsFormsApp2
         {
             this.Dispose();
         }
+
+        private void Reset_Password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Dispose();
+            }
+        }
     }
 }

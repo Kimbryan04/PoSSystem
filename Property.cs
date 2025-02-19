@@ -57,5 +57,13 @@ namespace WindowsFormsApp2
                 throw;
             }
         }
+
+        private void Property_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Dispose();
+            }
+        }
     }
 }

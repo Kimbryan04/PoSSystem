@@ -276,5 +276,22 @@ namespace WindowsFormsApp2
                
             
         }
+
+        private void PrintCancelledOrder_Click(object sender, EventArgs e)
+        {
+            POSReport report = new POSReport();
+            string param = "From : " + dtpCancelledFrom.Value.ToString() + " To : " + dtpCancelledTo.Value.ToString();
+            report.LoadCancelledOrder("Select * From vw_CancelledOrder Where sdate between '" + dtpCancelledFrom.Value.ToString() + "' And '" + dtpCancelledTo.Value.ToString() + "'", param);
+            report.ShowDialog();
+        }
+
+        private void PrintStockHistory_Click(object sender, EventArgs e)
+        {
+            POSReport report = new POSReport();
+            string param = "From : " + dtpShistFrom.Value.ToString() + " To : " + dtpSHisto.Value.ToString();
+            report.LoadStockInHistory("Select * From vw_StockIn Where cast(sdate as date) between '" + dtpShistFrom.Value.ToString() + "' And '" + dtpSHisto.Value.ToString() + "' and status like 'Done'", param);
+            report.ShowDialog();
+
+        }
     }
 }

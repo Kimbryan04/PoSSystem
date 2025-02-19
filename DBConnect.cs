@@ -69,5 +69,18 @@ namespace WindowsFormsApp2
 
             return password;
         }
+
+        public double extractData(string sql)
+        {
+            string sdate = DateTime.Now.ToShortDateString();
+            cn = new SqlConnection();
+            cn.ConnectionString = MyConnection();
+            cn.Open();
+            cm = new SqlCommand(sql, cn);
+            double data = double.Parse(cm.ExecuteScalar().ToString());
+            cn.Close();
+            return data;
+
+        }
     }
 }

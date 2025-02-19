@@ -141,5 +141,13 @@ namespace WindowsFormsApp2
         {
             Clear();
         }
+
+        private void ProductModuleForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Dispose();
+            }
+        }
     }
 }

@@ -136,7 +136,7 @@
   <data name="Select.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAwlJREFUOE+9k0tPE3EUxSufQPwCJi1BC1YpitHE10rBxM/hBzDRuGKF6MrEtYkr
+        EAAACxABrSO9dQAAAwlJREFUOE+9k0tPE3EUxSufQPwCJi1BC1YpitHE10rBxM/hBzDRuGKF6MrEtYkr
         LEIMICiPQvCVGKMBaaGvKe2839OZlra0bI65/1q0BXWlNznJpOn8cu65c3y+/zrD6Di36JzqW3Jukk4v
         Oqfot/a//XUuLHjH+le8h+Goq4WXHJxftHB+wcSZeRuhN7Yaem2Ohua8zvb3Dp3wSuFK/7Jr3lo1EEnb
         kLwKqrs1VKq72DY9PIupuD6voHfWNIKz5uX291uGwVbc+si6iWptD/X6Hmq1OnZ/AEs7ZbheCbpVwP0P
@@ -155,7 +155,7 @@
   <data name="txtsearch.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAP9JREFUSEvtk0kKAkEMRf9ecalexuEY6iUEQcSVguNdRPEkDkdxWKt8SKAIdqdK
+        DQAACw0B7QfALAAAAP9JREFUSEvtk0kKAkEMRf9ecalexuEY6iUEQcSVguNdRPEkDkdxWKt8SKAIdqdK
         xEXjg0A1map+J0BRqQNYAjgBuIvxvABQs8GpdKXgM8NuADo2KZYegIcU2gBoACiJNQFsxceY5CaUhbdj
         gb51BgyClyTJRc315h47iZ1bRx5nSaIsHi2J5Y+PRuWh3h7lQKZotAGTPSoSe7GOPFQiTotHW2KP1pEH
         l4hJHEWPvcTOrCMPjpzKxFHMYigxVwBV6/Tg8uiicRQphS4az3pz2tgmx8Im+pJ3xpuvgu+1LRAD5eIS
@@ -165,7 +165,7 @@
   <data name="label1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAZlJREFUaEPt1jFKxFAUhWFB0WrENQiuwtKl2NrbiNO6BbdhZ62V4EJs7MXil4gJ
+        EAAACxABrSO9dQAAAZlJREFUaEPt1jFKxFAUhWFB0WrENQiuwtKl2NrbiNO6BbdhZ62V4EJs7MXil4gJ
         yX/JI3kzgSvkK+e+c+9hppmDg9VqtTPgHHijQm9HjXfgYtimEnAJfPjCVL09tT6Bq2GrmYBr4Mub5+jt
         2sU3cDNsNwFwCDx4W43ezn14BI6GbUcAG+DJG2r19u7LM3A2bL36B/w7ZuXegQNZuXfgQFbuHTiQlXsH
         DmTl3oEDFe6AY+9tNTPg3qG5vDdwoMLGOw04dWgu7wwcqNB82yfe22pmwNahubw3cCAr9w4cyMq9Awey

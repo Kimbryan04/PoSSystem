@@ -35,18 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.btncancel = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
-            this.cbrole = new System.Windows.Forms.ComboBox();
-            this.txtfullname = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtrepass = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtpass = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtusername = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.lblusername = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -71,6 +59,18 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtpass = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtrepass = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtfullname = new System.Windows.Forms.TextBox();
+            this.cbrole = new System.Windows.Forms.ComboBox();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
             this.btnadd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
@@ -157,129 +157,6 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 1;
             // 
-            // btncancel
-            // 
-            this.btncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btncancel.FlatAppearance.BorderSize = 0;
-            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancel.ForeColor = System.Drawing.Color.White;
-            this.btncancel.Location = new System.Drawing.Point(724, 333);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(75, 35);
-            this.btncancel.TabIndex = 37;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = false;
-            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
-            // 
-            // btnsave
-            // 
-            this.btnsave.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnsave.FlatAppearance.BorderSize = 0;
-            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsave.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.ForeColor = System.Drawing.Color.White;
-            this.btnsave.Location = new System.Drawing.Point(620, 333);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(75, 35);
-            this.btnsave.TabIndex = 36;
-            this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
-            // 
-            // cbrole
-            // 
-            this.cbrole.FormattingEnabled = true;
-            this.cbrole.Items.AddRange(new object[] {
-            "Administrator",
-            "Cashier"});
-            this.cbrole.Location = new System.Drawing.Point(274, 214);
-            this.cbrole.Name = "cbrole";
-            this.cbrole.Size = new System.Drawing.Size(525, 28);
-            this.cbrole.TabIndex = 12;
-            // 
-            // txtfullname
-            // 
-            this.txtfullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtfullname.Location = new System.Drawing.Point(274, 260);
-            this.txtfullname.Name = "txtfullname";
-            this.txtfullname.Size = new System.Drawing.Size(525, 26);
-            this.txtfullname.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(170, 266);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Full Name :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(208, 217);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Role :";
-            // 
-            // txtrepass
-            // 
-            this.txtrepass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtrepass.Location = new System.Drawing.Point(274, 160);
-            this.txtrepass.Name = "txtrepass";
-            this.txtrepass.Size = new System.Drawing.Size(525, 26);
-            this.txtrepass.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(109, 163);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Re-type Password :";
-            // 
-            // txtpass
-            // 
-            this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpass.Location = new System.Drawing.Point(274, 109);
-            this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(525, 26);
-            this.txtpass.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(170, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Password :";
-            // 
-            // txtusername
-            // 
-            this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtusername.Location = new System.Drawing.Point(274, 58);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(525, 26);
-            this.txtusername.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(166, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Username :";
-            // 
             // metroTabPage2
             // 
             this.metroTabPage2.Controls.Add(this.lblusername);
@@ -303,13 +180,14 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 1;
+            this.metroTabPage2.Click += new System.EventHandler(this.metroTabPage2_Click);
             // 
             // lblusername
             // 
             this.lblusername.AutoSize = true;
             this.lblusername.BackColor = System.Drawing.Color.White;
             this.lblusername.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblusername.Location = new System.Drawing.Point(198, 75);
+            this.lblusername.Location = new System.Drawing.Point(279, 59);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(146, 32);
             this.lblusername.TabIndex = 41;
@@ -319,7 +197,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(98, 48);
+            this.pictureBox2.Location = new System.Drawing.Point(179, 32);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(94, 79);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -328,12 +206,13 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(707, 308);
+            this.button1.Location = new System.Drawing.Point(914, 439);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 35);
             this.button1.TabIndex = 39;
@@ -343,12 +222,13 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.ForestGreen;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(603, 308);
+            this.button2.Location = new System.Drawing.Point(824, 439);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 35);
             this.button2.TabIndex = 38;
@@ -359,7 +239,7 @@
             // txtchrepass
             // 
             this.txtchrepass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtchrepass.Location = new System.Drawing.Point(257, 240);
+            this.txtchrepass.Location = new System.Drawing.Point(338, 224);
             this.txtchrepass.Name = "txtchrepass";
             this.txtchrepass.Size = new System.Drawing.Size(525, 26);
             this.txtchrepass.TabIndex = 15;
@@ -369,7 +249,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(92, 243);
+            this.label10.Location = new System.Drawing.Point(173, 227);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(148, 20);
             this.label10.TabIndex = 14;
@@ -378,7 +258,7 @@
             // txtchnewpass
             // 
             this.txtchnewpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtchnewpass.Location = new System.Drawing.Point(257, 196);
+            this.txtchnewpass.Location = new System.Drawing.Point(338, 180);
             this.txtchnewpass.Name = "txtchnewpass";
             this.txtchnewpass.Size = new System.Drawing.Size(525, 26);
             this.txtchnewpass.TabIndex = 13;
@@ -388,7 +268,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(114, 199);
+            this.label7.Location = new System.Drawing.Point(195, 183);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(126, 20);
             this.label7.TabIndex = 12;
@@ -397,7 +277,7 @@
             // txtchcurpass
             // 
             this.txtchcurpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtchcurpass.Location = new System.Drawing.Point(257, 145);
+            this.txtchcurpass.Location = new System.Drawing.Point(338, 129);
             this.txtchcurpass.Name = "txtchcurpass";
             this.txtchcurpass.Size = new System.Drawing.Size(525, 26);
             this.txtchcurpass.TabIndex = 11;
@@ -407,7 +287,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(94, 148);
+            this.label8.Location = new System.Drawing.Point(175, 132);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(146, 20);
             this.label8.TabIndex = 10;
@@ -447,12 +327,13 @@
             // 
             // btnReset
             // 
+            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReset.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.Black;
-            this.btnReset.Location = new System.Drawing.Point(771, 93);
+            this.btnReset.Location = new System.Drawing.Point(812, 93);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(172, 35);
             this.btnReset.TabIndex = 18;
@@ -481,12 +362,13 @@
             // 
             // btnProperties
             // 
+            this.btnProperties.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnProperties.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnProperties.FlatAppearance.BorderSize = 0;
             this.btnProperties.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProperties.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProperties.ForeColor = System.Drawing.Color.Black;
-            this.btnProperties.Location = new System.Drawing.Point(836, 271);
+            this.btnProperties.Location = new System.Drawing.Point(876, 271);
             this.btnProperties.Name = "btnProperties";
             this.btnProperties.Size = new System.Drawing.Size(113, 35);
             this.btnProperties.TabIndex = 16;
@@ -496,12 +378,13 @@
             // 
             // btnRemove
             // 
+            this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRemove.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.Black;
-            this.btnRemove.Location = new System.Drawing.Point(720, 271);
+            this.btnRemove.Location = new System.Drawing.Point(750, 271);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(110, 35);
             this.btnRemove.TabIndex = 15;
@@ -574,6 +457,131 @@
             this.Column4.Name = "Column4";
             this.Column4.Width = 64;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(186, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Username :";
+            // 
+            // txtusername
+            // 
+            this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtusername.Location = new System.Drawing.Point(294, 97);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(525, 26);
+            this.txtusername.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(190, 154);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Password :";
+            // 
+            // txtpass
+            // 
+            this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpass.Location = new System.Drawing.Point(294, 148);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(525, 26);
+            this.txtpass.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(129, 202);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(148, 20);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Re-type Password :";
+            // 
+            // txtrepass
+            // 
+            this.txtrepass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtrepass.Location = new System.Drawing.Point(294, 199);
+            this.txtrepass.Name = "txtrepass";
+            this.txtrepass.Size = new System.Drawing.Size(525, 26);
+            this.txtrepass.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(228, 256);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Role :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(190, 305);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 20);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Full Name :";
+            // 
+            // txtfullname
+            // 
+            this.txtfullname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtfullname.Location = new System.Drawing.Point(294, 299);
+            this.txtfullname.Name = "txtfullname";
+            this.txtfullname.Size = new System.Drawing.Size(525, 26);
+            this.txtfullname.TabIndex = 11;
+            // 
+            // cbrole
+            // 
+            this.cbrole.FormattingEnabled = true;
+            this.cbrole.Items.AddRange(new object[] {
+            "Administrator",
+            "Cashier"});
+            this.cbrole.Location = new System.Drawing.Point(294, 253);
+            this.cbrole.Name = "cbrole";
+            this.cbrole.Size = new System.Drawing.Size(525, 28);
+            this.cbrole.TabIndex = 12;
+            // 
+            // btnsave
+            // 
+            this.btnsave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnsave.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnsave.FlatAppearance.BorderSize = 0;
+            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsave.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.ForeColor = System.Drawing.Color.White;
+            this.btnsave.Location = new System.Drawing.Point(827, 425);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(75, 35);
+            this.btnsave.TabIndex = 36;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // btncancel
+            // 
+            this.btncancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btncancel.FlatAppearance.BorderSize = 0;
+            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancel.ForeColor = System.Drawing.Color.White;
+            this.btncancel.Location = new System.Drawing.Point(908, 425);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(75, 35);
+            this.btncancel.TabIndex = 37;
+            this.btncancel.Text = "Cancel";
+            this.btncancel.UseVisualStyleBackColor = false;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
+            // 
             // UserAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -614,18 +622,6 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
         private MetroFramework.Controls.MetroTabPage metroTabPage3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtrepass;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtpass;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtusername;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtfullname;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cbrole;
-        public System.Windows.Forms.Button btncancel;
-        public System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.TextBox txtchrepass;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtchnewpass;
@@ -648,5 +644,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        public System.Windows.Forms.Button btncancel;
+        public System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.ComboBox cbrole;
+        private System.Windows.Forms.TextBox txtfullname;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtrepass;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.Label label2;
     }
 }

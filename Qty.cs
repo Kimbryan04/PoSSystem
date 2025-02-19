@@ -127,5 +127,13 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void Qty_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Dispose();
+            }
+        }
     }
 }

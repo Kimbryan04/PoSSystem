@@ -136,6 +136,12 @@
     <Compile Include="DailySales.Designer.cs">
       <DependentUpon>DailySales.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
@@ -150,6 +156,12 @@
     </Compile>
     <Compile Include="Discount.Designer.cs">
       <DependentUpon>Discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -294,8 +306,14 @@
     <EmbeddedResource Include="DailySales.resx">
       <DependentUpon>DailySales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Discount.resx">
       <DependentUpon>Discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -339,8 +357,10 @@
     <EmbeddedResource Include="Record.resx">
       <DependentUpon>Record.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptCancelledOrders.rdlc" />
     <EmbeddedResource Include="rptInvList.rdlc" />
     <EmbeddedResource Include="rptSoldItem.rdlc" />
+    <EmbeddedResource Include="rptStockInHistory.rdlc" />
     <EmbeddedResource Include="rptTopSell.rdlc" />
     <EmbeddedResource Include="rptReceipt.rdlc" />
     <EmbeddedResource Include="Reset Password.resx">

@@ -79,14 +79,14 @@
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "No.";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 59;
+            this.Column1.Width = 57;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "Pcode";
             this.Column2.Name = "Column2";
-            this.Column2.Width = 83;
+            this.Column2.Width = 81;
             // 
             // Column4
             // 
@@ -99,7 +99,7 @@
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column8.HeaderText = "Qty";
             this.Column8.Name = "Column8";
-            this.Column8.Width = 60;
+            this.Column8.Width = 58;
             // 
             // Select
             // 
@@ -198,10 +198,12 @@
             this.Controls.Add(this.btnadd);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ProductStockIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRODUCT STOCK IN";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ProductStockIn_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dvgProduct)).EndInit();
             this.btnadd.ResumeLayout(false);
             this.ResumeLayout(false);

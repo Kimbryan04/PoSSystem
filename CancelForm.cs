@@ -55,5 +55,13 @@ namespace WindowsFormsApp2
         {
             e.Handled = true;
         }
+
+        private void CancelForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Escape)
+            {
+                this.Dispose();
+            }
+        }
     }
 }

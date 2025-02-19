@@ -239,5 +239,90 @@ namespace WindowsFormsApp2
             }
 
         }
+
+        public void LoadCancelledOrder(string sql, string param)
+        {
+            try
+            {
+                ReportDataSource rptDS;
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptCancelledOrders.rdlc";
+                this.reportViewer1.LocalReport.DataSources.Clear();
+
+                DataSet1 ds = new DataSet1();
+                SqlDataAdapter da = new SqlDataAdapter();
+
+                cn.Open();
+
+                da.SelectCommand = new SqlCommand(sql, cn);
+                da.Fill(ds.Tables["dtCancelledOrder"]);
+
+                cn.Close();
+
+
+                ReportParameter pDate = new ReportParameter("PDate", param);
+
+
+                reportViewer1.LocalReport.SetParameters(pDate);
+
+                rptDS = new ReportDataSource("DataSet1", ds.Tables["dtCancelledOrder"]);
+
+                reportViewer1.LocalReport.DataSources.Add(rptDS);
+                reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+                reportViewer1.ZoomMode = ZoomMode.Percent;
+                reportViewer1.ZoomPercent = 30;
+            }
+            catch (Exception ex)
+            {
+                cn.Close();
+                MessageBox.Show(ex.Message, "Error");
+            }
+        }
+
+        public void LoadStockInHistory(string sql, string param)
+        {
+            try
+            {
+                ReportDataSource rptDS;
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptStockInHistory.rdlc";
+                this.reportViewer1.LocalReport.DataSources.Clear();
+
+                DataSet1 ds = new DataSet1();
+                SqlDataAdapter da = new SqlDataAdapter();
+
+                cn.Open();
+
+                da.SelectCommand = new SqlCommand(sql, cn);
+                da.Fill(ds.Tables["dtStockHistory"]);
+
+                cn.Close();
+
+
+                ReportParameter pDate = new ReportParameter("pDate", param);
+
+
+                reportViewer1.LocalReport.SetParameters(pDate);
+
+                rptDS = new ReportDataSource("DataSet1", ds.Tables["dtStockHistory"]);
+
+                reportViewer1.LocalReport.DataSources.Add(rptDS);
+                reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+                reportViewer1.ZoomMode = ZoomMode.Percent;
+                reportViewer1.ZoomPercent = 30;
+            }
+            catch (Exception ex)
+            {
+                cn.Close();
+                MessageBox.Show(ex.Message, "Error");
+            }
+        }
+
+        private void POSReport_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Escape)
+            {
+                this.Dispose();
+
+            }
+        }
     }
 }

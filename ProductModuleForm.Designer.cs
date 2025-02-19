@@ -300,10 +300,12 @@
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "ProductModuleForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductModuleForm";
             this.Load += new System.EventHandler(this.ProductModuleForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ProductModuleForm_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

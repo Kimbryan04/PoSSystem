@@ -86,7 +86,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(214, 713);
+            this.panel1.Size = new System.Drawing.Size(214, 648);
             this.panel1.TabIndex = 0;
             // 
             // btnlogout
@@ -425,6 +425,7 @@
             this.btndashboard.Text = "Dashboard";
             this.btndashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btndashboard.UseVisualStyleBackColor = true;
+            this.btndashboard.Click += new System.EventHandler(this.btndashboard_Click);
             // 
             // panel2
             // 
@@ -488,11 +489,14 @@
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(214, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1235, 73);
+            this.panelTitle.Size = new System.Drawing.Size(1075, 73);
             this.panelTitle.TabIndex = 1;
             // 
             // lbltitle
             // 
+            this.lbltitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.ForeColor = System.Drawing.Color.White;
@@ -508,7 +512,7 @@
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(214, 73);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1235, 640);
+            this.panelMain.Size = new System.Drawing.Size(1075, 575);
             this.panelMain.TabIndex = 2;
             // 
             // MainForm
@@ -516,7 +520,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1449, 713);
+            this.ClientSize = new System.Drawing.Size(1289, 648);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1);

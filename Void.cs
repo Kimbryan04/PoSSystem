@@ -39,7 +39,7 @@ namespace WindowsFormsApp2
                 cm.Parameters.AddWithValue("@pcode", cancel.txtpcode.Text);
                 cm.Parameters.AddWithValue("@price", double.Parse(cancel.txtprice.Text));
                 cm.Parameters.AddWithValue("@qty", int.Parse(cancel.txtqty.Text));
-                cm.Parameters.AddWithValue("@total", int.Parse(cancel.txtqty.Text));
+                cm.Parameters.AddWithValue("@total", double.Parse(cancel.txttotal.Text));
                 cm.Parameters.AddWithValue("@sdate", DateTime.Now);
                 cm.Parameters.AddWithValue("@voidby", user);
                 cm.Parameters.AddWithValue("@cancelledby", cancel.txtcancel.Text);
@@ -99,6 +99,14 @@ namespace WindowsFormsApp2
             }
            
 
+        }
+
+        private void Void_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Dispose();
+            }
         }
     }
 }

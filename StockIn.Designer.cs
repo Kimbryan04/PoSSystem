@@ -83,6 +83,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dtpFrom = new System.Windows.Forms.DateTimePicker();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btnadd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -93,6 +94,7 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInstockHistory)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -190,8 +192,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.btnsave);
             this.tabPage1.Controls.Add(this.dvgStockIn);
+            this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
@@ -202,12 +204,13 @@
             // 
             // btnsave
             // 
+            this.btnsave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsave.BackColor = System.Drawing.Color.ForestGreen;
             this.btnsave.FlatAppearance.BorderSize = 0;
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsave.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
-            this.btnsave.Location = new System.Drawing.Point(895, 418);
+            this.btnsave.Location = new System.Drawing.Point(892, 7);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 35);
             this.btnsave.TabIndex = 10;
@@ -241,12 +244,12 @@
             this.Column7,
             this.Column8,
             this.Delete});
-            this.dvgStockIn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dvgStockIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvgStockIn.EnableHeadersVisualStyles = false;
             this.dvgStockIn.Location = new System.Drawing.Point(3, 176);
             this.dvgStockIn.Name = "dvgStockIn";
             this.dvgStockIn.RowHeadersVisible = false;
-            this.dvgStockIn.Size = new System.Drawing.Size(970, 236);
+            this.dvgStockIn.Size = new System.Drawing.Size(970, 235);
             this.dvgStockIn.TabIndex = 4;
             this.dvgStockIn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgStockIn_CellContentClick);
             // 
@@ -255,7 +258,7 @@
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "No.";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 59;
+            this.Column1.Width = 57;
             // 
             // Column9
             // 
@@ -273,7 +276,7 @@
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "Pcode";
             this.Column2.Name = "Column2";
-            this.Column2.Width = 83;
+            this.Column2.Width = 81;
             // 
             // Column4
             // 
@@ -286,28 +289,28 @@
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column5.HeaderText = "Qty";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 60;
+            this.Column5.Width = 58;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column6.HeaderText = "Stock In Date";
             this.Column6.Name = "Column6";
-            this.Column6.Width = 132;
+            this.Column6.Width = 130;
             // 
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column7.HeaderText = "Stock In By";
             this.Column7.Name = "Column7";
-            this.Column7.Width = 113;
+            this.Column7.Width = 111;
             // 
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column8.HeaderText = "Supplier";
             this.Column8.Name = "Column8";
-            this.Column8.Width = 91;
+            this.Column8.Width = 89;
             // 
             // Delete
             // 
@@ -636,6 +639,15 @@
             this.dtpFrom.Size = new System.Drawing.Size(200, 26);
             this.dtpFrom.TabIndex = 0;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnsave);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(3, 411);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(970, 45);
+            this.panel3.TabIndex = 11;
+            // 
             // StockIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -664,6 +676,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvInstockHistory)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -722,5 +735,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.Panel panel3;
     }
 }

@@ -101,7 +101,7 @@
             // lblid
             // 
             this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(116, 125);
+            this.lblid.Location = new System.Drawing.Point(116, 127);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(32, 20);
             this.lblid.TabIndex = 10;
@@ -110,7 +110,7 @@
             // lblpcode
             // 
             this.lblpcode.AutoSize = true;
-            this.lblpcode.Location = new System.Drawing.Point(27, 171);
+            this.lblpcode.Location = new System.Drawing.Point(27, 170);
             this.lblpcode.Name = "lblpcode";
             this.lblpcode.Size = new System.Drawing.Size(121, 20);
             this.lblpcode.TabIndex = 11;
@@ -119,7 +119,7 @@
             // lbldesc
             // 
             this.lbldesc.AutoSize = true;
-            this.lbldesc.Location = new System.Drawing.Point(49, 221);
+            this.lbldesc.Location = new System.Drawing.Point(49, 216);
             this.lbldesc.Name = "lbldesc";
             this.lbldesc.Size = new System.Drawing.Size(99, 20);
             this.lbldesc.TabIndex = 12;
@@ -203,7 +203,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(478, 266);
+            this.label5.Location = new System.Drawing.Point(478, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 20);
             this.label5.TabIndex = 21;
@@ -212,7 +212,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(407, 220);
+            this.label6.Location = new System.Drawing.Point(407, 221);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(121, 20);
             this.label6.TabIndex = 20;
@@ -259,7 +259,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 461);
+            this.label8.Location = new System.Drawing.Point(9, 458);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(147, 20);
             this.label8.TabIndex = 31;
@@ -324,7 +324,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(454, 415);
+            this.label11.Location = new System.Drawing.Point(454, 413);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(77, 20);
             this.label11.TabIndex = 34;
@@ -333,7 +333,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(430, 365);
+            this.label12.Location = new System.Drawing.Point(430, 368);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(101, 20);
             this.label12.TabIndex = 33;
@@ -401,9 +401,11 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CancelForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CancelForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
