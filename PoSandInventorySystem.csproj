@@ -339,6 +339,9 @@
     <EmbeddedResource Include="Record.resx">
       <DependentUpon>Record.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptInvList.rdlc" />
+    <EmbeddedResource Include="rptSoldItem.rdlc" />
+    <EmbeddedResource Include="rptTopSell.rdlc" />
     <EmbeddedResource Include="rptReceipt.rdlc" />
     <EmbeddedResource Include="Reset Password.resx">
       <DependentUpon>Reset Password.cs</DependentUpon>
