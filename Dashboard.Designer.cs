@@ -30,36 +30,34 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.stonks = new System.Windows.Forms.PictureBox();
-            this.notStonks = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblCriticalItems = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblStockOnHand = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbltotalproduct = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblDailySale = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.stonks = new System.Windows.Forms.PictureBox();
+            this.notStonks = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.stonks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notStonks)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -69,6 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stonks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notStonks)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,28 +79,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1095, 151);
             this.panel1.TabIndex = 0;
-            // 
-            // stonks
-            // 
-            this.stonks.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stonks.Image = ((System.Drawing.Image)(resources.GetObject("stonks.Image")));
-            this.stonks.Location = new System.Drawing.Point(0, 0);
-            this.stonks.Name = "stonks";
-            this.stonks.Size = new System.Drawing.Size(1095, 595);
-            this.stonks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.stonks.TabIndex = 1;
-            this.stonks.TabStop = false;
-            // 
-            // notStonks
-            // 
-            this.notStonks.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.notStonks.Image = ((System.Drawing.Image)(resources.GetObject("notStonks.Image")));
-            this.notStonks.Location = new System.Drawing.Point(0, 0);
-            this.notStonks.Name = "notStonks";
-            this.notStonks.Size = new System.Drawing.Size(1095, 595);
-            this.notStonks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.notStonks.TabIndex = 3;
-            this.notStonks.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -135,6 +113,14 @@
             this.panel8.Size = new System.Drawing.Size(270, 145);
             this.panel8.TabIndex = 8;
             // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Location = new System.Drawing.Point(76, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(5, 146);
+            this.panel9.TabIndex = 9;
+            // 
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -162,13 +148,13 @@
             // 
             // lblCriticalItems
             // 
-            this.lblCriticalItems.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblCriticalItems.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCriticalItems.AutoSize = true;
-            this.lblCriticalItems.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCriticalItems.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCriticalItems.ForeColor = System.Drawing.Color.White;
-            this.lblCriticalItems.Location = new System.Drawing.Point(152, 10);
+            this.lblCriticalItems.Location = new System.Drawing.Point(151, 16);
             this.lblCriticalItems.Name = "lblCriticalItems";
-            this.lblCriticalItems.Size = new System.Drawing.Size(29, 32);
+            this.lblCriticalItems.Size = new System.Drawing.Size(24, 25);
             this.lblCriticalItems.TabIndex = 3;
             this.lblCriticalItems.Text = "0";
             // 
@@ -195,6 +181,14 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(267, 145);
             this.panel6.TabIndex = 7;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Location = new System.Drawing.Point(71, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 146);
+            this.panel7.TabIndex = 8;
             // 
             // label7
             // 
@@ -223,13 +217,13 @@
             // 
             // lblStockOnHand
             // 
-            this.lblStockOnHand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblStockOnHand.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblStockOnHand.AutoSize = true;
-            this.lblStockOnHand.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStockOnHand.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStockOnHand.ForeColor = System.Drawing.Color.White;
-            this.lblStockOnHand.Location = new System.Drawing.Point(150, 10);
+            this.lblStockOnHand.Location = new System.Drawing.Point(151, 16);
             this.lblStockOnHand.Name = "lblStockOnHand";
-            this.lblStockOnHand.Size = new System.Drawing.Size(29, 32);
+            this.lblStockOnHand.Size = new System.Drawing.Size(24, 25);
             this.lblStockOnHand.TabIndex = 3;
             this.lblStockOnHand.Text = "0";
             // 
@@ -256,6 +250,14 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(267, 145);
             this.panel4.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(73, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 146);
+            this.panel5.TabIndex = 7;
             // 
             // label4
             // 
@@ -284,13 +286,13 @@
             // 
             // lbltotalproduct
             // 
-            this.lbltotalproduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbltotalproduct.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbltotalproduct.AutoSize = true;
-            this.lbltotalproduct.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotalproduct.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalproduct.ForeColor = System.Drawing.Color.White;
-            this.lbltotalproduct.Location = new System.Drawing.Point(156, 10);
+            this.lbltotalproduct.Location = new System.Drawing.Point(156, 16);
             this.lbltotalproduct.Name = "lbltotalproduct";
-            this.lbltotalproduct.Size = new System.Drawing.Size(29, 32);
+            this.lbltotalproduct.Size = new System.Drawing.Size(24, 25);
             this.lbltotalproduct.TabIndex = 3;
             this.lbltotalproduct.Text = "0";
             // 
@@ -317,6 +319,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(267, 145);
             this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(71, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 146);
+            this.panel3.TabIndex = 6;
             // 
             // label3
             // 
@@ -345,16 +355,15 @@
             // 
             // lblDailySale
             // 
-            this.lblDailySale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblDailySale.AutoSize = true;
-            this.lblDailySale.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDailySale.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDailySale.ForeColor = System.Drawing.Color.White;
-            this.lblDailySale.Location = new System.Drawing.Point(138, 10);
+            this.lblDailySale.Location = new System.Drawing.Point(115, 16);
             this.lblDailySale.Name = "lblDailySale";
-            this.lblDailySale.Size = new System.Drawing.Size(67, 32);
+            this.lblDailySale.Size = new System.Drawing.Size(54, 25);
             this.lblDailySale.TabIndex = 3;
             this.lblDailySale.Text = "0.00";
-            this.lblDailySale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDailySale.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
@@ -366,37 +375,27 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
+            // stonks
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(71, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 146);
-            this.panel3.TabIndex = 6;
+            this.stonks.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stonks.Image = ((System.Drawing.Image)(resources.GetObject("stonks.Image")));
+            this.stonks.Location = new System.Drawing.Point(0, 0);
+            this.stonks.Name = "stonks";
+            this.stonks.Size = new System.Drawing.Size(1095, 595);
+            this.stonks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.stonks.TabIndex = 1;
+            this.stonks.TabStop = false;
             // 
-            // panel5
+            // notStonks
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(73, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 146);
-            this.panel5.TabIndex = 7;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(71, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(5, 146);
-            this.panel7.TabIndex = 8;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Location = new System.Drawing.Point(76, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(5, 146);
-            this.panel9.TabIndex = 9;
+            this.notStonks.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.notStonks.Image = ((System.Drawing.Image)(resources.GetObject("notStonks.Image")));
+            this.notStonks.Location = new System.Drawing.Point(0, 0);
+            this.notStonks.Name = "notStonks";
+            this.notStonks.Size = new System.Drawing.Size(1095, 595);
+            this.notStonks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.notStonks.TabIndex = 3;
+            this.notStonks.TabStop = false;
             // 
             // Dashboard
             // 
@@ -414,8 +413,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DASHBOARD";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.stonks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notStonks)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -429,6 +426,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stonks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notStonks)).EndInit();
             this.ResumeLayout(false);
 
         }

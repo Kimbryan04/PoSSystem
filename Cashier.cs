@@ -289,8 +289,8 @@ namespace WindowsFormsApp2
                 cn.Open();
 
                 // Use parameterized query to avoid SQL injection
-                cm = new SqlCommand("SELECT * FROM tbProduct WHERE barcode LIKE @barcode", cn);
-                cm.Parameters.AddWithValue("@barcode", textBox1.Text + "%");
+                cm = new SqlCommand("SELECT * FROM tbProduct WHERE barcode = @barcode", cn);
+                cm.Parameters.AddWithValue("@barcode", textBox1.Text);
                 dr = cm.ExecuteReader();
 
 
@@ -506,35 +506,58 @@ namespace WindowsFormsApp2
                 captureDevice.OnFrameArrived += captureDevice_OnFrameArrived;
                 captureDevice.Start();
             }
+
+            if(e.KeyCode == Keys.F1)
+            {
+                btntransact.PerformClick();
+            }
+
+            if(e.KeyCode == Keys.F2)
+            {
+                btnsearch.PerformClick();
+            }
+
+            if(e.KeyCode == Keys.F3)
+            {
+                btnadd.PerformClick();
+            }
+            if(e.KeyCode == Keys.F4)
+            {
+                btnsettle.PerformClick();
+            }
+            if( e.KeyCode == Keys.F5)
+            {
+                btnclear.PerformClick();
+            }
+            if(e.KeyCode == Keys.F6)
+            {
+                btnsales.PerformClick();
+            }
+            if(e.KeyCode == Keys.F7)
+            {
+                btnchangepass.PerformClick();
+            }
+            if(e.KeyCode == Keys.F9)
+            {
+                btnlog.PerformClick();
+            }
              
         }
 
         private void captureDevice_OnFrameArrived(object source, FrameArrivedEventArgs e)
         {
-
-            if (e == null)
-            {
-                MessageBox.Show("Null Image", "Null");
-            }
-            else
-            {
                 Bitmap bitmap = (Bitmap)e.GetFrame();
-                if (bitmap != null)
-                {
-                    BarcodeReader barcodeReader = new BarcodeReader();
-                    var result = barcodeReader.Decode(bitmap);
+                BarcodeReader barcodeReader = new BarcodeReader();
+                var result = barcodeReader.Decode(bitmap);
 
                     if (result != null)
                     {
                         textBox1.Invoke(new MethodInvoker(delegate ()
                         {
-                            textBox1.Text = result.ToString(); // Use result.Text instead of result.ToString()
-                        }));
-                    }
-                }
-            }
-           
-        }
+                            textBox1.Text = result.ToString();
+                        }));   
+                     }
+        }  
 
 
         private void Cashier_FormClosing(object sender, FormClosingEventArgs e)

@@ -91,7 +91,7 @@
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "No.";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 59;
+            this.Column1.Width = 57;
             // 
             // Column2
             // 
@@ -106,7 +106,7 @@
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column3.HeaderText = "Supplier";
             this.Column3.Name = "Column3";
-            this.Column3.Width = 91;
+            this.Column3.Width = 89;
             // 
             // Column4
             // 
@@ -119,28 +119,28 @@
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column5.HeaderText = "Contact Person";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 148;
+            this.Column5.Width = 146;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column6.HeaderText = "Phone";
             this.Column6.Name = "Column6";
-            this.Column6.Width = 81;
+            this.Column6.Width = 79;
             // 
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column7.HeaderText = "Email";
             this.Column7.Name = "Column7";
-            this.Column7.Width = 71;
+            this.Column7.Width = 69;
             // 
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column8.HeaderText = "Fax";
             this.Column8.Name = "Column8";
-            this.Column8.Width = 58;
+            this.Column8.Width = 56;
             // 
             // Edit
             // 
@@ -205,7 +205,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 52);
+            this.label1.Size = new System.Drawing.Size(121, 52);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Supplier";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

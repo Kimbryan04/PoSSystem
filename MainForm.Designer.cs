@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnlogout = new System.Windows.Forms.Button();
             this.SubpanelSetting = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnstore = new System.Windows.Forms.Button();
             this.btnuser = new System.Windows.Forms.Button();
             this.btnsettings = new System.Windows.Forms.Button();
@@ -58,7 +59,6 @@
             this.panelTitle = new System.Windows.Forms.Panel();
             this.lbltitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SubpanelSetting.SuspendLayout();
             this.SubpanelRecord.SuspendLayout();
@@ -98,13 +98,14 @@
             this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogout.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogout.ForeColor = System.Drawing.Color.White;
+            this.btnlogout.Image = ((System.Drawing.Image)(resources.GetObject("btnlogout.Image")));
+            this.btnlogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnlogout.Location = new System.Drawing.Point(0, 988);
             this.btnlogout.Name = "btnlogout";
             this.btnlogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnlogout.Size = new System.Drawing.Size(197, 53);
             this.btnlogout.TabIndex = 31;
             this.btnlogout.Text = "Logout";
-            this.btnlogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnlogout.UseVisualStyleBackColor = true;
             this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
             // 
@@ -118,6 +119,25 @@
             this.SubpanelSetting.Name = "SubpanelSetting";
             this.SubpanelSetting.Size = new System.Drawing.Size(197, 160);
             this.SubpanelSetting.TabIndex = 29;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 106);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(197, 53);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Barcode";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnstore
             // 
@@ -165,13 +185,14 @@
             this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsettings.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsettings.ForeColor = System.Drawing.Color.White;
+            this.btnsettings.Image = ((System.Drawing.Image)(resources.GetObject("btnsettings.Image")));
+            this.btnsettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsettings.Location = new System.Drawing.Point(0, 775);
             this.btnsettings.Name = "btnsettings";
             this.btnsettings.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnsettings.Size = new System.Drawing.Size(197, 53);
             this.btnsettings.TabIndex = 28;
             this.btnsettings.Text = "Setting";
-            this.btnsettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsettings.UseVisualStyleBackColor = true;
             this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
             // 
@@ -231,13 +252,14 @@
             this.btnrecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrecord.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrecord.ForeColor = System.Drawing.Color.White;
+            this.btnrecord.Image = ((System.Drawing.Image)(resources.GetObject("btnrecord.Image")));
+            this.btnrecord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnrecord.Location = new System.Drawing.Point(0, 616);
             this.btnrecord.Name = "btnrecord";
             this.btnrecord.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnrecord.Size = new System.Drawing.Size(197, 53);
             this.btnrecord.TabIndex = 26;
             this.btnrecord.Text = "Record";
-            this.btnrecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnrecord.UseVisualStyleBackColor = true;
             this.btnrecord.Click += new System.EventHandler(this.btnrecord_Click);
             // 
@@ -249,13 +271,14 @@
             this.btnsupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsupplier.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsupplier.ForeColor = System.Drawing.Color.White;
+            this.btnsupplier.Image = ((System.Drawing.Image)(resources.GetObject("btnsupplier.Image")));
+            this.btnsupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsupplier.Location = new System.Drawing.Point(0, 563);
             this.btnsupplier.Name = "btnsupplier";
             this.btnsupplier.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnsupplier.Size = new System.Drawing.Size(197, 53);
             this.btnsupplier.TabIndex = 25;
             this.btnsupplier.Text = "Supplier";
-            this.btnsupplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsupplier.UseVisualStyleBackColor = true;
             this.btnsupplier.Click += new System.EventHandler(this.btnsupplier_Click);
             // 
@@ -315,13 +338,14 @@
             this.btninstock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninstock.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninstock.ForeColor = System.Drawing.Color.White;
+            this.btninstock.Image = ((System.Drawing.Image)(resources.GetObject("btninstock.Image")));
+            this.btninstock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btninstock.Location = new System.Drawing.Point(0, 404);
             this.btninstock.Name = "btninstock";
             this.btninstock.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btninstock.Size = new System.Drawing.Size(197, 53);
             this.btninstock.TabIndex = 22;
             this.btninstock.Text = "In stock";
-            this.btninstock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btninstock.UseVisualStyleBackColor = true;
             this.btninstock.Click += new System.EventHandler(this.btninstock_Click);
             // 
@@ -401,13 +425,14 @@
             this.btnproduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnproduct.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnproduct.ForeColor = System.Drawing.Color.White;
+            this.btnproduct.Image = ((System.Drawing.Image)(resources.GetObject("btnproduct.Image")));
+            this.btnproduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnproduct.Location = new System.Drawing.Point(0, 217);
             this.btnproduct.Name = "btnproduct";
             this.btnproduct.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnproduct.Size = new System.Drawing.Size(197, 53);
             this.btnproduct.TabIndex = 2;
             this.btnproduct.Text = "Product";
-            this.btnproduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnproduct.UseVisualStyleBackColor = true;
             this.btnproduct.Click += new System.EventHandler(this.btnproduct_Click);
             // 
@@ -419,13 +444,14 @@
             this.btndashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndashboard.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndashboard.ForeColor = System.Drawing.Color.White;
+            this.btndashboard.Image = ((System.Drawing.Image)(resources.GetObject("btndashboard.Image")));
+            this.btndashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btndashboard.Location = new System.Drawing.Point(0, 164);
             this.btndashboard.Name = "btndashboard";
             this.btndashboard.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btndashboard.Size = new System.Drawing.Size(197, 53);
             this.btndashboard.TabIndex = 0;
             this.btndashboard.Text = "Dashboard";
-            this.btndashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btndashboard.UseVisualStyleBackColor = true;
             this.btndashboard.Click += new System.EventHandler(this.btndashboard_Click);
             // 
@@ -499,11 +525,12 @@
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.ForeColor = System.Drawing.Color.White;
-            this.lbltitle.Location = new System.Drawing.Point(20, 22);
+            this.lbltitle.Location = new System.Drawing.Point(3, 25);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(143, 25);
             this.lbltitle.TabIndex = 2;
             this.lbltitle.Text = "Title | Name";
+            this.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panelMain
             // 
@@ -513,25 +540,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1075, 644);
             this.panelMain.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkCyan;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 106);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(197, 53);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Barcode";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 

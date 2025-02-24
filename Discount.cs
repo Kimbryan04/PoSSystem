@@ -56,8 +56,6 @@ namespace WindowsFormsApp2
 
         private void btnconfirm_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Discount Amount: " + txtdiscamount.Text);
-
             try
             {
                 if(MessageBox.Show("Add discount? Click yes to confirm", "POINT OF SALES", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
