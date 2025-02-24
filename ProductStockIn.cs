@@ -52,6 +52,29 @@ namespace WindowsFormsApp2
 
         }
 
+        public void addStockIn(string pcode)
+        {
+            try
+            {
+                cn.Open();
+                cm = new SqlCommand("INSERT INTO tbStock(refno, pcode, sdate, stockinby, supplierid) VALUES(@refno, @pcode, @sdate, @stockinby, @supplierid)", cn);
+                cm.Parameters.AddWithValue("@refno", stockin.txtrefno.Text);
+                cm.Parameters.AddWithValue("@pcode", pcode);
+                cm.Parameters.AddWithValue("@sdate", stockin.dtpsdate.Value);
+                cm.Parameters.AddWithValue("@stockinby", stockin.txtstockin.Text);
+                cm.Parameters.AddWithValue("@supplierid", stockin.lblId.Text);
+                cm.ExecuteNonQuery();
+                cn.Close();
+                
+                stockin.Loadstockin();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "POINT OF SALES");
+
+            }
+        }
+
         private void dvgProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colname = dvgProduct.Columns[e.ColumnIndex].Name;    
@@ -71,25 +94,8 @@ namespace WindowsFormsApp2
                 }
                 if (MessageBox.Show("Add this item?", "POINT OF SALES", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    try
-                    {
-                        cn.Open();
-                        cm = new SqlCommand("INSERT INTO tbStock(refno, pcode, sdate, stockinby, supplierid) VALUES(@refno, @pcode, @sdate, @stockinby, @supplierid)", cn);
-                        cm.Parameters.AddWithValue("@refno", stockin.txtrefno.Text);
-                        cm.Parameters.AddWithValue("@pcode", dvgProduct.Rows[e.RowIndex].Cells[1].Value.ToString());
-                        cm.Parameters.AddWithValue("@sdate", stockin.dtpsdate.Value);
-                        cm.Parameters.AddWithValue("@stockinby", stockin.txtstockin.Text);
-                        cm.Parameters.AddWithValue("@supplierid", int.Parse(stockin.lblId.Text));
-                        cm.ExecuteNonQuery();
-                        cn.Close();
-                        MessageBox.Show("Item successfully added", "POINT OF SALES");
-                        stockin.Loadstockin();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "POINT OF SALES");
-
-                    }
+                    addStockIn(dvgProduct.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    MessageBox.Show("Item successfully added", "POINT OF SALES");
                 }
             }
 

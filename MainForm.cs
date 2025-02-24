@@ -16,13 +16,14 @@ namespace WindowsFormsApp2
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
+        SqlDataReader dr;
         public string _pass;
         public MainForm()
         {
             InitializeComponent();
             CustomizeDesign();
             cn = new SqlConnection(dbcon.MyConnection());
-            cn.Open();
+            btndashboard.PerformClick();
         }
 
         private Form activeForm = null;
@@ -193,6 +194,37 @@ namespace WindowsFormsApp2
         {
             hidesubmenu();
             OpenChildForm(new Dashboard());
+            Notif();
+        }
+
+        public void Notif()
+        {
+            int i = 0;
+            cn.Open();
+            cm = new SqlCommand("SELECT * FROM vw_CriticalItems", cn);
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                Alert alert = new Alert(this);
+                alert.lblid.Text = dr["pcode"].ToString();
+                alert.btnRefresh.Enabled = true;
+                alert.ShowAlert(i + ". " + dr["pdesc"].ToString() + " - " + dr["qty"].ToString());
+            }
+
+            dr.Close();
+            cn.Close();
+        }
+
+        private void btnbarcode_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Barcode());
+            hidesubmenu();
         }
     }
 }

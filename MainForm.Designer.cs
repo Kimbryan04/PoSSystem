@@ -58,6 +58,7 @@
             this.panelTitle = new System.Windows.Forms.Panel();
             this.lbltitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SubpanelSetting.SuspendLayout();
             this.SubpanelRecord.SuspendLayout();
@@ -86,7 +87,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(214, 648);
+            this.panel1.Size = new System.Drawing.Size(214, 717);
             this.panel1.TabIndex = 0;
             // 
             // btnlogout
@@ -97,7 +98,7 @@
             this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogout.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogout.ForeColor = System.Drawing.Color.White;
-            this.btnlogout.Location = new System.Drawing.Point(0, 934);
+            this.btnlogout.Location = new System.Drawing.Point(0, 988);
             this.btnlogout.Name = "btnlogout";
             this.btnlogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnlogout.Size = new System.Drawing.Size(197, 53);
@@ -109,12 +110,13 @@
             // 
             // SubpanelSetting
             // 
+            this.SubpanelSetting.Controls.Add(this.button1);
             this.SubpanelSetting.Controls.Add(this.btnstore);
             this.SubpanelSetting.Controls.Add(this.btnuser);
             this.SubpanelSetting.Dock = System.Windows.Forms.DockStyle.Top;
             this.SubpanelSetting.Location = new System.Drawing.Point(0, 828);
             this.SubpanelSetting.Name = "SubpanelSetting";
-            this.SubpanelSetting.Size = new System.Drawing.Size(197, 106);
+            this.SubpanelSetting.Size = new System.Drawing.Size(197, 160);
             this.SubpanelSetting.TabIndex = 29;
             // 
             // btnstore
@@ -494,13 +496,10 @@
             // 
             // lbltitle
             // 
-            this.lbltitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.ForeColor = System.Drawing.Color.White;
-            this.lbltitle.Location = new System.Drawing.Point(375, 18);
+            this.lbltitle.Location = new System.Drawing.Point(20, 22);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(143, 25);
             this.lbltitle.TabIndex = 2;
@@ -512,15 +511,34 @@
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(214, 73);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1075, 575);
+            this.panelMain.Size = new System.Drawing.Size(1075, 644);
             this.panelMain.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 106);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(197, 53);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Barcode";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1289, 648);
+            this.ClientSize = new System.Drawing.Size(1289, 717);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1);
@@ -573,6 +591,7 @@
         private System.Windows.Forms.Panel panelMain;
         public System.Windows.Forms.Label lblusername;
         public System.Windows.Forms.Label lbltitle;
+        private System.Windows.Forms.Button button1;
     }
 }
 

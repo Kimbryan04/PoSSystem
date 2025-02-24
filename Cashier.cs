@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZXing;
+using DarrenLee.Media;
 
 namespace WindowsFormsApp2
 {
@@ -22,7 +24,7 @@ namespace WindowsFormsApp2
         string id;
         string price;
 
-
+        Camera captureDevice = new Camera();
         public Cashier()
         {
             InitializeComponent();
@@ -30,6 +32,8 @@ namespace WindowsFormsApp2
             LoadCashier();
             GetTranNo();
             lbldate.Text = DateTime.Now.ToShortDateString();
+           
+
         }
 
         public void LoadCashier()
@@ -493,6 +497,49 @@ namespace WindowsFormsApp2
             }
 
 
+        }
+
+        private void dvgCashier_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.F8)
+            {
+                captureDevice.OnFrameArrived += captureDevice_OnFrameArrived;
+                captureDevice.Start();
+            }
+             
+        }
+
+        private void captureDevice_OnFrameArrived(object source, FrameArrivedEventArgs e)
+        {
+
+            if (e == null)
+            {
+                MessageBox.Show("Null Image", "Null");
+            }
+            else
+            {
+                Bitmap bitmap = (Bitmap)e.GetFrame();
+                if (bitmap != null)
+                {
+                    BarcodeReader barcodeReader = new BarcodeReader();
+                    var result = barcodeReader.Decode(bitmap);
+
+                    if (result != null)
+                    {
+                        textBox1.Invoke(new MethodInvoker(delegate ()
+                        {
+                            textBox1.Text = result.ToString(); // Use result.Text instead of result.ToString()
+                        }));
+                    }
+                }
+            }
+           
+        }
+
+
+        private void Cashier_FormClosing(object sender, FormClosingEventArgs e)
+        {
+          captureDevice.Stop();   
         }
     }
 

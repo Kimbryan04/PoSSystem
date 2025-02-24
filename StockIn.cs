@@ -23,6 +23,7 @@ namespace WindowsFormsApp2
             cn = new SqlConnection(dbcon.MyConnection());
             LoadSupplier();
             GetRefNo();
+            
 
         }
 
@@ -38,23 +39,30 @@ namespace WindowsFormsApp2
             cbsupplier.Items.Clear();
             cbsupplier.DataSource = dbcon.getTable("SELECT * FROM tbSupplier");
             cbsupplier.DisplayMember = "Supplier";
+            cbsupplier.Text = "";
         }
 
         private void cbsupplier_SelectedIndexChanged(object sender, EventArgs e)
         {
+          
+        }
+
+        public void ProductForSupplier(string pcode)
+        {
+            string supplier = "";
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM tbSupplier WHERE supplier LIKE '" + cbsupplier.Text + "%'", cn);
+            cm = new SqlCommand("SELECT * FROM vw_StockIn WHERE pcode like '"+ pcode + "'", cn);
             dr = cm.ExecuteReader();
-            dr.Read();
-            if (dr.HasRows)
+            while (dr.Read())
             {
-                lblId.Text = dr["id"].ToString();
-                txtcperson.Text = dr["contact_person"].ToString();
-                txtaddress.Text = dr["address"].ToString();
+                supplier = dr["supplier"].ToString();
             }
+
             dr.Close();
             cn.Close();
-        }
+
+            cbsupplier.Text = supplier;
+;        }
 
         private void cbsupplier_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -187,6 +195,27 @@ namespace WindowsFormsApp2
                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
+        }
+
+        private void cbsupplier_TextChanged(object sender, EventArgs e)
+        {
+            cn.Open();
+            cm = new SqlCommand("SELECT * FROM tbSupplier WHERE supplier LIKE '" + cbsupplier.Text + "%'", cn);
+            dr = cm.ExecuteReader();
+            if (dr.Read())  // Check if data is returned
+            {
+                lblId.Text = dr["id"].ToString();
+                txtcperson.Text = dr["contact_person"].ToString();
+                txtaddress.Text = dr["address"].ToString();
+            }
+           
+            dr.Close();
+            cn.Close();
+        }
+
+        private void cbsupplier_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
